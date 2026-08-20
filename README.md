@@ -28,3 +28,6 @@ codex plugin add tokenchronicle@tokenchronicle
 ```
 
 See `docs/getting-started.zh-CN.md` or `docs/getting-started.md` for product and privacy guidance.
+
+Support: `service@h2me.tech` · Privacy: `privacy@h2me.tech` · Confidential security reports:
+`security@h2me.tech`.

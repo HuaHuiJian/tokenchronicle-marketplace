@@ -6,13 +6,13 @@ Security fixes are applied to the latest published TokenChronicle release.
 
 ## Reporting
 
-Do not place secrets, conversation content, local paths, or credentials in a public issue. Use the
-in-product feedback flow only after reviewing its bounded payload, or contact the publisher through
-a separately agreed private channel.
+Report suspected vulnerabilities privately to `security@h2me.tech`. Do not place exploit details,
+secrets, conversation content, local paths, or credentials in a public issue or the in-product
+feedback flow. For ordinary product support, use `service@h2me.tech` instead.
 
-A monitored confidential vulnerability-reporting address or GitHub private vulnerability reporting
-channel must be published before the catalog becomes installable. Product feedback and public issues
-are not substitutes for confidential exploit reporting.
+The publisher must monitor `security@h2me.tech`, restrict mailbox access, use MFA, and exercise the
+incident-response path before the catalog becomes installable. Product feedback and public issues are
+not substitutes for confidential exploit reporting.
 
 ## Client boundary
 

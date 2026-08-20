@@ -66,3 +66,9 @@ and installation-revocation controls.
 
 TokenChronicle observes supported local Codex artifacts read-only. It does not modify Codex core files,
 hooks, configuration, memories, or automation state without a separate explicit user action.
+
+## Contact
+
+Privacy and data-rights requests: `privacy@h2me.tech`. Ordinary product support:
+`service@h2me.tech`. Confidential vulnerability reports must be sent separately to
+`security@h2me.tech`. Postal contact: 天津市滨海新区中新生态城启发大厦, 300467, China.
