@@ -22,6 +22,15 @@ The following are user-owned data and are never release inputs:
 Feedback drafts and receipts are persistent user-owned records. TokenChronicle does not expire or remove
 them automatically; the user may delete them explicitly from local application data when desired.
 
+Codex plugin execution uses the host-provided `PLUGIN_DATA` directory when available. Standalone
+execution uses the operating system's per-user application-data location. Configuration, locks, logs,
+feedback, and credentials remain operational state. Durable archives may use that private default or
+an exact user-selected archive directory such as `Documents/TokenChronicle`.
+
+Before choosing Documents, setup must explain that iCloud, enterprise synchronization, search indexing,
+or backup software may process that directory. Selecting a location never enables scheduling, Codex
+Automation, feedback transmission, or historical migration.
+
 ## Network behavior
 
 The core archive and viewer require no network access. Feedback and future synchronization remain
@@ -32,6 +41,17 @@ Feedback drafts contain only product version, page name, category, optional rati
 message, timestamp, and an explicit privacy declaration. Drafts remain local unless the user first
 configures an HTTPS receiver, reviews the exact payload, and confirms that individual submission.
 Enabling the receiver never enables background or batch transmission.
+
+## Optional encrypted iCloud snapshots
+
+iCloud backup is disabled by default and creates no automatic schedule. On explicit request, the macOS
+client builds an AES-256 encrypted DMG locally, verifies it, and only then publishes the immutable
+snapshot to the user's iCloud Drive. The live archive and operational state remain local.
+
+The password is entered interactively, passed to the macOS system utility over standard input, and is
+never stored, logged, included in a command argument, or transmitted by TokenChronicle. A detailed
+per-file manifest stays inside the encrypted image; the external receipt contains bounded aggregate
+counts, image checksum, and verification state only. iCloud synchronization is not an independent backup.
 
 The optional feedback credential identifies only a random installation instance. It is not derived
 from a username, device serial number, project, Codex account, or hardware fingerprint. It is stored

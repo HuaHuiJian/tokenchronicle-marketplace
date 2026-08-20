@@ -14,6 +14,7 @@
 
 - 保持 Automation 关闭：每日模型 Token 为 0，需要时手动归档。
 - 启用每日 Codex Automation：自动整理并消耗上述估算范围内的模型 Token。
-- 使用操作系统本地定时任务：可运行纯本地归档命令，但不获得 Codex 对过程的模型归纳。
+- 使用操作系统本地定时任务：程序内置 macOS launchd 与 Windows Task Scheduler 适配器，但默认
+  关闭，只有用户明确执行 `schedule enable --confirm-background-schedule` 后才注册。
 
 可运行 `tokenchronicle usage-notice` 查看当前版本的机器可读估算参数。

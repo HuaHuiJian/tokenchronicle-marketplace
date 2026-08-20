@@ -44,5 +44,7 @@ shows actual historical Token usage after archives are available.
 
 The underlying archive and memory report commands are deterministic local Python operations. An
 operating-system scheduler can run them directly with an expected model-token cost of zero, while
-still using local CPU, memory, and disk. This scheduler is not bundled in the current release; users
-should not assume it is active unless they configure it independently.
+still using local CPU, memory, and disk. TokenChronicle includes explicit adapters for macOS launchd
+and Windows Task Scheduler. They remain disabled until the user runs `tokenchronicle schedule enable
+--confirm-background-schedule`; Linux users may invoke `run-daily` manually or through an independently
+managed scheduler.

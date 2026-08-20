@@ -27,16 +27,18 @@ Not required:
 - third-party Python packages;
 - network access for archive, analysis, or local viewing.
 
+See `docs/compatibility.md` for the supported/tested matrix and platform feature limits.
+
 Run the read-only environment check before installation:
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli preflight
+tokenchronicle preflight
 ```
 
 Run `guide` at any time for a short value statement, requirements, choices, and first-use sequence:
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli guide
+tokenchronicle guide
 ```
 
 ## Choose where data lives
@@ -64,13 +66,13 @@ On macOS, the default user-owned location is:
 Use the default locations:
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli setup --accept-privacy
+tokenchronicle setup --accept-privacy
 ```
 
 Or choose a Codex source, data parent directory, and viewer port:
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli setup --accept-privacy \
+tokenchronicle setup --accept-privacy \
   --codex-home /path/to/.codex \
   --data-dir /path/to/TokenChronicleData \
   --port 8877
@@ -94,9 +96,9 @@ copying.
 ## First use
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli doctor
-PYTHONPATH=src python3 -m tokenchronicle.cli archive
-PYTHONPATH=src python3 -m tokenchronicle.cli serve
+tokenchronicle doctor
+tokenchronicle archive
+tokenchronicle serve
 ```
 
 Then open `http://127.0.0.1:8777/`. The viewer remains local by default.
@@ -104,7 +106,7 @@ Then open `http://127.0.0.1:8777/`. The viewer remains local by default.
 Use `memory-daily` when local memory lifecycle reports are wanted:
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli memory-daily
+tokenchronicle memory-daily
 ```
 
 ## Storage and upgrades

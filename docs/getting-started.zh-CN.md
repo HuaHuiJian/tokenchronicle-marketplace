@@ -35,6 +35,8 @@ tokenchronicle setup --accept-privacy --language auto
 - 可以写入用户选择的 TokenChronicle 数据目录；
 - 首次归档建议至少预留 5 GB 可用磁盘空间。
 
+支持与已测试的系统矩阵、各平台功能差异见 `docs/compatibility.zh-CN.md`。
+
 不需要 Node.js、Docker、独立数据库、第三方 Python 包或专门工作目录。归档、分析和本地浏览
 不需要联网。
 
