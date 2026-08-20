@@ -1,0 +1,24 @@
+name: public-boundary
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Reject private implementation and user-data file types
+        run: |
+          blocked="$(find . -path ./.git -prune -o -type f \( -name '*.py' -o -name '*.pyc' -o -name '*.js' -o -name '*.ts' -o -name '*.sqlite' -o -name '*.sqlite3' -o -name '*.jsonl' \) -print)"
+          test -z "$blocked" || { printf '%s\n' "$blocked"; exit 1; }
+      - name: Reject private paths and credential markers
+        run: |
+          ! grep -RIE --exclude-dir=.git --exclude='public-boundary.yml' '(/Users/[^/[:space:]]+/|/home/[^/[:space:]]+/|ADMIN_TOKEN[[:space:]]*=|BEGIN (RSA|OPENSSH|EC) PRIVATE KEY)' .
+      - name: Validate marketplace shape
+        run: |
+          python -c 'import json,pathlib; p=pathlib.Path(".agents/plugins/marketplace.json"); d=json.loads(p.read_text()); assert d["name"]=="tokenchronicle"; assert isinstance(d["plugins"], list)'

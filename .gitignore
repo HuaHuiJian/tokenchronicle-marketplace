@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.*
+exports/
+tmp/
+src/
+receiver/
+tests/
+scripts/
+*.py
+*.pyc
+*.js
+*.ts
+*.sqlite
+*.sqlite3
+*.jsonl

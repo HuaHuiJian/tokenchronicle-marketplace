@@ -1,0 +1,7 @@
+{
+  "name": "tokenchronicle",
+  "interface": {
+    "displayName": "TokenChronicle 词元日志"
+  },
+  "plugins": []
+}
