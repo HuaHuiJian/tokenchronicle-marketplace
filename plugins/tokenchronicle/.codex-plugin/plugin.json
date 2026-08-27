@@ -1,0 +1,38 @@
+{
+  "name": "tokenchronicle",
+  "version": "0.7.0",
+  "description": "TokenChronicle 词元日志 bilingual local-first Codex activity archive and memory continuity workflows",
+  "skills": "./skills/",
+  "author": {
+    "name": "Xin He",
+    "email": "service@h2me.tech",
+    "url": "https://h2me.tech"
+  },
+  "homepage": "https://h2me.tech",
+  "repository": "https://github.com/HuaHuiJian/tokenchronicle-marketplace",
+  "interface": {
+    "displayName": "TokenChronicle 词元日志",
+    "shortDescription": "Private local archive and audit for Codex work",
+    "longDescription": "Archive, browse, audit, and analyze Codex activity locally while keeping user conversations and settings outside the installed program.",
+    "developerName": "Huahuijian (tianjin) Technology Co., Ltd.",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Interactive"
+    ],
+    "websiteURL": "https://h2me.tech",
+    "privacyPolicyURL": "https://github.com/HuaHuiJian/tokenchronicle-marketplace/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/HuaHuiJian/tokenchronicle-marketplace/blob/main/TERMS.md",
+    "brandColor": "#0F766E",
+    "defaultPrompt": "检查 TokenChronicle 词元日志的本地配置、隐私边界和归档状态。"
+  },
+  "license": "Proprietary",
+  "keywords": [
+    "codex",
+    "archive",
+    "audit",
+    "privacy",
+    "tokens"
+  ]
+}

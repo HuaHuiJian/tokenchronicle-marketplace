@@ -3,5 +3,18 @@
   "interface": {
     "displayName": "TokenChronicle 词元日志"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "tokenchronicle",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tokenchronicle"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
 }

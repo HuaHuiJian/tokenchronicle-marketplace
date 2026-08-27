@@ -1,0 +1,265 @@
+{
+  "product": "TokenChronicle Marketplace Payload",
+  "version": "0.7.0",
+  "contains_private_source": false,
+  "contains_user_data": false,
+  "contains_credentials": false,
+  "signed_targets": {
+    "macos-arm64": {
+      "product": "TokenChronicle",
+      "version": "0.7.0",
+      "target": "macos-arm64",
+      "executable": "tokenchronicle",
+      "executable_sha256": "37dc9f23740ff7d3653484ec2cd70c4a76691d41279c817682f7fd2b79c9ff4f",
+      "pyinstaller_version": "6.21.0",
+      "contains_user_data": false,
+      "contains_credentials": false,
+      "source_distribution": false,
+      "signature_state": "developer-id-notarized",
+      "embedded_signing_identity": "3ABEB3BAC51B9E3303882150EF27684EA4CD76B8",
+      "signing_identity": "Developer ID Application: Huahuijian (tianjin) Technology Co., Ltd. (H3HN33FMQ8)",
+      "notarization_id": "0f4906d4-b965-4724-94e3-f7c4244612f0",
+      "source_commit": "30be145fcbf1c01a4071d55fea0e727fb318105a"
+    },
+    "macos-x86_64": {
+      "product": "TokenChronicle",
+      "version": "0.7.0",
+      "target": "macos-x86_64",
+      "executable": "tokenchronicle",
+      "executable_sha256": "6b52b9891cf4875ba96412225dade5cc375a5ae4fd92021db7aa7cc4ed0b1375",
+      "pyinstaller_version": "6.21.0",
+      "contains_user_data": false,
+      "contains_credentials": false,
+      "source_distribution": false,
+      "signature_state": "developer-id-notarized",
+      "embedded_signing_identity": "3ABEB3BAC51B9E3303882150EF27684EA4CD76B8",
+      "signing_identity": "Developer ID Application: Huahuijian (tianjin) Technology Co., Ltd. (H3HN33FMQ8)",
+      "notarization_id": "d0d5ce00-46c8-47e7-9b11-f1f46eea52c5",
+      "source_commit": "30be145fcbf1c01a4071d55fea0e727fb318105a"
+    }
+  },
+  "supported_platforms": [
+    "macos-arm64",
+    "macos-x86_64"
+  ],
+  "unavailable_platforms": [
+    "windows-x86_64"
+  ],
+  "files": [
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "bytes": 399,
+      "sha256": "5b4ee919b651d5830db8a7dab9cfb963caf0779e59139c9eed8ae7f012c2b40a"
+    },
+    {
+      "path": "plugins/tokenchronicle/.codex-plugin/plugin.json",
+      "bytes": 1405,
+      "sha256": "27aee3046d10674f4e49be161bf4272014437e2b6102e241208438b7a3569c03"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-arm64/SOURCE_COMMIT",
+      "bytes": 41,
+      "sha256": "74c2893dc11685a6c40c11cd542a98e72e9d23c5799dad64b2c370a637b3b069"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-arm64/STANDALONE_MANIFEST.json",
+      "bytes": 628,
+      "sha256": "2830ed27c266d02c87b371925b1988a89edf0b1914e4c214414d2b9843476758"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle",
+      "bytes": 9888624,
+      "sha256": "37dc9f23740ff7d3653484ec2cd70c4a76691d41279c817682f7fd2b79c9ff4f"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/SOURCE_COMMIT",
+      "bytes": 41,
+      "sha256": "74c2893dc11685a6c40c11cd542a98e72e9d23c5799dad64b2c370a637b3b069"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/STANDALONE_MANIFEST.json",
+      "bytes": 629,
+      "sha256": "013776c142cb39801aee511f927549baf543556638af6587c09730353864d014"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle",
+      "bytes": 4406736,
+      "sha256": "6b52b9891cf4875ba96412225dade5cc375a5ae4fd92021db7aa7cc4ed0b1375"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/FEEDBACK_PROTOCOL.md",
+      "bytes": 3493,
+      "sha256": "d88902b653f1a83df5d19c03d48ad38fe193b34bb943f11f4bde356917dd4af0"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/LICENSE",
+      "bytes": 526,
+      "sha256": "9dd697a16ca0068128e6054607006b313ffcf1782dd9ce5dfc1222b6ab1797bf"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/NOTICE.md",
+      "bytes": 1363,
+      "sha256": "0a1fb036863f4b5b25afccbcd7dc1d8020850823da0388de4dc74ed3c625ce63"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/NOTICE.zh-CN.md",
+      "bytes": 1066,
+      "sha256": "4f7fd7ccadabd8013dacc3741c35b46c3152664fb609c027ba6e8a2c10b47fab"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/PRIVACY.md",
+      "bytes": 4258,
+      "sha256": "379f1a01fc8b962fea21862350d3e86171d199bf22f875603b2fd59326e762f0"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/PRIVACY.zh-CN.md",
+      "bytes": 2763,
+      "sha256": "4c987cf5eedb1853e1dff75d6f00496931b81a01eff403e4615fc157ea6ffcf2"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/SECURITY.md",
+      "bytes": 1330,
+      "sha256": "e647da698e3b1a2c910ed01d080118c3ad3e503cfbf5413a7668427169f959d5"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/TERMS.md",
+      "bytes": 2933,
+      "sha256": "ab356f453e173bc3fdf06a9f02ad5ca840cdf1607839b3099e3e1a6bb942d947"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/TERMS.zh-CN.md",
+      "bytes": 2515,
+      "sha256": "d79f2dac597e017fc50e533a4e5ce710189d518a608aec0faeffbaccfc722d4e"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/THIRD_PARTY_NOTICES.md",
+      "bytes": 1404,
+      "sha256": "d5beee6ca447053e934495523140dc915d3fbd974a8e2cac5fa1b844ad58c781"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/UNINSTALL.md",
+      "bytes": 1402,
+      "sha256": "00c882ea44964e187636085232df5bad6d023a10cb8666ad18f1874b1f6efdf8"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/UPGRADE.md",
+      "bytes": 1621,
+      "sha256": "319350268f00c42130f4a6f0d35d0949191e2bba9c98c55757f101018b256ae0"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/UPGRADE.zh-CN.md",
+      "bytes": 1311,
+      "sha256": "6808e2e892915c50951098b4559c15ee4ce19c4379157763bf3e24510eb13237"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/compatibility.md",
+      "bytes": 1870,
+      "sha256": "eff3fed5cca22459c87909ff644d7a8f6db6c838fe17a6ad6a09cef258530d03"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/compatibility.zh-CN.md",
+      "bytes": 1662,
+      "sha256": "3b9e98bba1aefc5b6dd0edaf4471ffe0dc5ed3708ac596d7c75b5714551e2b36"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/getting-started.md",
+      "bytes": 6360,
+      "sha256": "4b78097ff62ac7b67f2a237dd52a5ffe519ceafa9a1c4481993851dbd0874652"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/getting-started.zh-CN.md",
+      "bytes": 5521,
+      "sha256": "dd468f0fec8080cb75515c0e00296be207df625a98072e483e40d6a9750f5a51"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/token-usage.md",
+      "bytes": 3014,
+      "sha256": "9e57695cf4378177c7a230a21524c2af4e39930b7b6dab8c1821ed2ad1c454be"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/token-usage.zh-CN.md",
+      "bytes": 1888,
+      "sha256": "22208658bd4765847309b25c7e2701de74e6322141f0e96a7ed3beaee9181678"
+    },
+    {
+      "path": "plugins/tokenchronicle/licenses/macos-arm64/PYINSTALLER_COPYING.txt",
+      "bytes": 32138,
+      "sha256": "dcf75fdb959db1e3b41c0f8505069d2ece781b5ec6b3d0a4d30975cfc6580245"
+    },
+    {
+      "path": "plugins/tokenchronicle/licenses/macos-arm64/PYINSTALLER_HOOKS_CONTRIB_LICENSE.txt",
+      "bytes": 27666,
+      "sha256": "91d0baaff00773038e72c0a1fc9d5d2d38706b7a2b9c04f34296608f931b9cd0"
+    },
+    {
+      "path": "plugins/tokenchronicle/licenses/macos-arm64/PYTHON_LICENSE.txt",
+      "bytes": 13804,
+      "sha256": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231"
+    },
+    {
+      "path": "plugins/tokenchronicle/licenses/macos-arm64/TOKENCHRONICLE_LICENSE.txt",
+      "bytes": 526,
+      "sha256": "9dd697a16ca0068128e6054607006b313ffcf1782dd9ce5dfc1222b6ab1797bf"
+    },
+    {
+      "path": "plugins/tokenchronicle/licenses/macos-arm64/TOKENCHRONICLE_NOTICE.md",
+      "bytes": 1363,
+      "sha256": "0a1fb036863f4b5b25afccbcd7dc1d8020850823da0388de4dc74ed3c625ce63"
+    },
+    {
+      "path": "plugins/tokenchronicle/licenses/macos-x86_64/PYINSTALLER_COPYING.txt",
+      "bytes": 32138,
+      "sha256": "dcf75fdb959db1e3b41c0f8505069d2ece781b5ec6b3d0a4d30975cfc6580245"
+    },
+    {
+      "path": "plugins/tokenchronicle/licenses/macos-x86_64/PYINSTALLER_HOOKS_CONTRIB_LICENSE.txt",
+      "bytes": 27666,
+      "sha256": "91d0baaff00773038e72c0a1fc9d5d2d38706b7a2b9c04f34296608f931b9cd0"
+    },
+    {
+      "path": "plugins/tokenchronicle/licenses/macos-x86_64/PYTHON_LICENSE.txt",
+      "bytes": 13925,
+      "sha256": "599826df92bfdcd2702eac691072498bb096c55af04ee984cf90f70ed77b5a70"
+    },
+    {
+      "path": "plugins/tokenchronicle/licenses/macos-x86_64/TOKENCHRONICLE_LICENSE.txt",
+      "bytes": 526,
+      "sha256": "9dd697a16ca0068128e6054607006b313ffcf1782dd9ce5dfc1222b6ab1797bf"
+    },
+    {
+      "path": "plugins/tokenchronicle/licenses/macos-x86_64/TOKENCHRONICLE_NOTICE.md",
+      "bytes": 1363,
+      "sha256": "0a1fb036863f4b5b25afccbcd7dc1d8020850823da0388de4dc74ed3c625ce63"
+    },
+    {
+      "path": "plugins/tokenchronicle/skills/tokenchronicle-archive/SKILL.md",
+      "bytes": 1378,
+      "sha256": "7a3af5fe41c1fef0576ea1fa8158507702fee1410200373000f49c12572f4fce"
+    },
+    {
+      "path": "plugins/tokenchronicle/skills/tokenchronicle-backup/SKILL.md",
+      "bytes": 1563,
+      "sha256": "f9278acbbad55092a719484ecf115e9d3aa4418ec61d30fcbe264bc24b726596"
+    },
+    {
+      "path": "plugins/tokenchronicle/skills/tokenchronicle-feedback/SKILL.md",
+      "bytes": 1316,
+      "sha256": "c341c9b7cad1634a9bf74e5bd2a4b4c5ef87ccf0f49124f28ff3d6e52183914d"
+    },
+    {
+      "path": "plugins/tokenchronicle/skills/tokenchronicle-insights/SKILL.md",
+      "bytes": 1206,
+      "sha256": "67cdf362f017fe60b29243cd26069da76a686d9586614cf3aea2f0d2740d3f1d"
+    },
+    {
+      "path": "plugins/tokenchronicle/skills/tokenchronicle-setup/SKILL.md",
+      "bytes": 4945,
+      "sha256": "a3a7acd60ad2bac7a99367cad147900d143026c115ada0adeb40dbf02500dd53"
+    },
+    {
+      "path": "plugins/tokenchronicle/skills/tokenchronicle-update/SKILL.md",
+      "bytes": 1023,
+      "sha256": "cfbce0687ed5fc3cc5396aff48937ebbca2a4fd96be88e93f8c71993356c7788"
+    }
+  ]
+}
