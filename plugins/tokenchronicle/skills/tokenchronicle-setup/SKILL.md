@@ -5,7 +5,8 @@ description: Initialize, diagnose, or open the local TokenChronicle Codex activi
 
 # TokenChronicle Setup
 
-Resolve the plugin root first. If a signed bundled executable exists under `bin/<platform>/`, use the
+Resolve the plugin root first. If a signed bundled executable exists under
+`bin/<platform>/tokenchronicle/`, use `tokenchronicle` on macOS or `tokenchronicle.exe` on Windows. Use the
 exact executable matching macOS arm64, macOS x86_64, or Windows x86_64; never execute a binary for a
 different platform and never download a replacement. A public plugin release may support only a subset
 of platforms. If this installed plugin has no executable for the current platform, report that the

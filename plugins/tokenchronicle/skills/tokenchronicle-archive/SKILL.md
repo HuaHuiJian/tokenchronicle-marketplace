@@ -5,7 +5,8 @@ description: Archive local Codex activity into the user's private TokenChronicle
 
 # TokenChronicle Archive
 
-Resolve the plugin root first. If a signed bundled executable exists under `bin/<platform>/`, use the
+Resolve the plugin root first. If a signed bundled executable exists under
+`bin/<platform>/tokenchronicle/`, use `tokenchronicle` on macOS or `tokenchronicle.exe` on Windows. Use the
 exact executable matching macOS arm64, macOS x86_64, or Windows x86_64; never execute a binary for a
 different platform and never download a replacement. If an installed plugin has no executable for the
 current platform, report that the platform client has not been published and stop. For an unpacked development bundle only,

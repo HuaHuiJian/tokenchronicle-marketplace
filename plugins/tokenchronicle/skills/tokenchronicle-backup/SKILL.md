@@ -5,8 +5,8 @@ description: Explain, inspect, or create an explicit AES-256 encrypted TokenChro
 
 # TokenChronicle iCloud Backup
 
-Resolve the plugin root and prefer its matching signed executable under `bin/macos-arm64/` or
-`bin/macos-x86_64/`. If an installed plugin has neither matching executable, report that the macOS
+Resolve the plugin root and prefer its matching signed executable under
+`bin/macos-arm64/tokenchronicle/` or `bin/macos-x86_64/tokenchronicle/`. If an installed plugin has neither matching executable, report that the macOS
 client has not been published for this architecture and stop. Never download or substitute a binary.
 
 1. Run `tokenchronicle backup status` and report whether macOS `hdiutil` and iCloud Drive are available.

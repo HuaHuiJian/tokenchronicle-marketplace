@@ -118,7 +118,7 @@ tokenchronicle backup create --confirm-cloud-backup
 ```
 
 Run the create command in the user's own interactive terminal. The password is prompted twice and must
-never be placed in chat, command arguments, configuration, or scripts. Version 0.7.0 does not schedule
+never be placed in chat, command arguments, configuration, or scripts. Version 0.7.1 does not schedule
 cloud snapshots automatically.
 
 ## First use

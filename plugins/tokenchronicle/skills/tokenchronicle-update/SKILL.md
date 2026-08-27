@@ -5,7 +5,8 @@ description: Upgrade TokenChronicle code without overwriting user archives, conf
 
 # TokenChronicle Update
 
-Resolve the plugin root and use only the matching signed executable under `bin/<platform>/`. If an
+Resolve the plugin root and use only the matching signed executable under
+`bin/<platform>/tokenchronicle/`. If an
 installed plugin has no matching executable, report that the platform client has not been published
 and stop. Never download, replace, or trust an unverified executable.
 

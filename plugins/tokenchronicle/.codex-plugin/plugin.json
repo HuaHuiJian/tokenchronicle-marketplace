@@ -1,6 +1,6 @@
 {
   "name": "tokenchronicle",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "TokenChronicle 词元日志 bilingual local-first Codex activity archive and memory continuity workflows",
   "skills": "./skills/",
   "author": {

@@ -5,7 +5,8 @@ description: Help a user review, save, export, or explicitly submit TokenChronic
 
 # TokenChronicle Feedback
 
-Resolve the plugin root and prefer its exact matching signed executable under `bin/<platform>/`;
+Resolve the plugin root and prefer its exact matching signed executable under
+`bin/<platform>/tokenchronicle/`;
 if an installed plugin has no matching executable, report that the platform client has not been
 published and stop. Never download or substitute a binary.
 

@@ -7,7 +7,8 @@ description: Summarize private TokenChronicle usage reports and memory candidate
 
 Use only the user's configured TokenChronicle data directory.
 
-Resolve the plugin root and use its exact matching signed executable under `bin/<platform>/` when
+Resolve the plugin root and use its exact matching signed executable under
+`bin/<platform>/tokenchronicle/` when
 present; never download or substitute a binary. If an installed plugin has no matching executable,
 report that the platform client has not been published and stop. When a report refresh is needed, run
 the matching executable's `memory-daily` command. An unpacked development bundle
