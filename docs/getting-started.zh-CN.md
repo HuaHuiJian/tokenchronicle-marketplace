@@ -29,7 +29,8 @@ tokenchronicle setup --accept-privacy --language auto
 
 ## 安装前要求
 
-- Python 3.9 或更高版本；
+- 从 Codex Marketplace 安装正式插件时，无需用户另行安装 Python；
+- 只有源码开发或内部 ZIP/wheel 验证才要求 Python 3.9 或更高版本；
 - 本机已使用过 Codex，并存在 `state_5.sqlite`；
 - 可以读取 Codex 数据目录；
 - 可以写入用户选择的 TokenChronicle 数据目录；
@@ -49,18 +50,20 @@ tokenchronicle preflight
 
 ## 目录选择
 
-macOS 默认数据目录为：
+安装流程会分别展示插件程序、运行状态和长期档案库。Codex 插件优先使用官方提供的
+`PLUGIN_DATA` 保存配置、锁和日志；长期档案库由用户选择。macOS 独立运行时的默认数据目录为：
 
 ```text
 ~/Library/Application Support/TokenChronicle/
 ```
 
-用户不需要手工创建。也可以选择 Codex 数据源、用户数据目录、语言和端口：
+用户不需要手工创建。长期档案库可以使用默认私有位置，也可以精确选择 Documents、iCloud Drive
+或其他目录：
 
 ```bash
 tokenchronicle setup --accept-privacy \
   --codex-home /path/to/.codex \
-  --data-dir /path/to/TokenChronicleData \
+  --archive-dir ~/Documents/TokenChronicle \
   --language zh-CN \
   --port 8877
 ```
@@ -71,7 +74,8 @@ TokenChronicle 不会绕过决定，可以改选其他可写目录并重新预�
 ## 可选功能和成本
 
 - 手工归档不会引入模型 Token 消耗。
-- 每日 Codex Automation 默认关闭，产品默认后台消耗为 `0 Token/日`。
+- 所有调度默认关闭，产品默认后台消耗为 `0 Token/日`。
+- 首次归档成功后可以单独启用本地操作系统定时任务；该确定性任务不使用模型 Token。
 - 显式启用每日 Automation 后，建议按每次 `0.7M-2.0M total_tokens` 规划。
 - 反馈默认关闭，每次联网发送都必须单独确认。
 - 默认不复制未脱敏的原始 rollout 文件。

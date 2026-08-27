@@ -13,7 +13,8 @@ does not write files into the projects being analyzed.
 
 Required:
 
-- Python 3.9 or newer;
+- no separate Python installation for the signed Codex Marketplace plugin;
+- Python 3.9 or newer only for source development or internal ZIP/wheel validation;
 - a local Codex installation that has already created `state_5.sqlite`;
 - read access to the Codex data directory;
 - write access to a user-selected TokenChronicle data directory;
@@ -51,7 +52,8 @@ writing to the selected application data directory. The user should see the exac
 Declining leaves Codex and the selected directory unchanged; the user may choose another writable data
 location and run preflight again.
 
-On macOS, the default user-owned location is:
+Codex uses the host-provided `PLUGIN_DATA` directory for plugin operational state. The durable archive
+library is a separate user choice. For a standalone macOS installation, the default location is:
 
 ```text
 ~/Library/Application Support/TokenChronicle/
@@ -69,12 +71,12 @@ Use the default locations:
 tokenchronicle setup --accept-privacy
 ```
 
-Or choose a Codex source, data parent directory, and viewer port:
+Or choose a Codex source, exact durable archive library, and viewer port:
 
 ```bash
 tokenchronicle setup --accept-privacy \
   --codex-home /path/to/.codex \
-  --data-dir /path/to/TokenChronicleData \
+  --archive-dir ~/Documents/TokenChronicle \
   --port 8877
 ```
 
@@ -87,6 +89,8 @@ Setup does not enable scheduled Automation, feedback transmission, synchronizati
 copying.
 
 - **Manual archive:** run only when needed; no model Token use is introduced by the local Python command.
+- **Local OS schedule:** optional after a successful first archive; it executes deterministic local
+  commands and introduces no model Token use.
 - **Codex daily Automation:** optional and separately authorized. Plan for `0.7M-2.0M` total Tokens
   per run. See `docs/token-usage.md` before enabling it.
 - **Feedback:** optional. Drafts remain local unless the user configures an HTTPS receiver and

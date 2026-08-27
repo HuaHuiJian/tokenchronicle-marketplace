@@ -30,11 +30,12 @@ jobs:
           data = json.loads((root / ".agents/plugins/marketplace.json").read_text())
           assert data["name"] == "tokenchronicle"
           assert isinstance(data["plugins"], list)
-          required_targets = {
+          target_contract = {
               "macos-arm64": ("tokenchronicle", "developer-id-notarized"),
               "macos-x86_64": ("tokenchronicle", "developer-id-notarized"),
               "windows-x86_64": ("tokenchronicle.exe", "authenticode-signed"),
           }
+          required_targets = {"macos-arm64", "macos-x86_64"}
           for plugin in data["plugins"]:
               assert plugin.get("name") == "tokenchronicle"
               source = plugin.get("source")
@@ -53,7 +54,18 @@ jobs:
               assert policy.get("authentication") in {"ON_INSTALL", "ON_USE"}
               if policy["installation"] == "NOT_AVAILABLE":
                   continue
-              for target, (executable_name, signature_state) in required_targets.items():
+              release_manifest = root / "PUBLIC_RELEASE_MANIFEST.json"
+              assert release_manifest.is_file(), release_manifest
+              release = json.loads(release_manifest.read_text())
+              assert release.get("contains_private_source") is False
+              assert release.get("contains_user_data") is False
+              assert release.get("contains_credentials") is False
+              supported_targets = set(release.get("supported_platforms", []))
+              assert required_targets <= supported_targets
+              assert supported_targets <= set(target_contract)
+
+              for target in supported_targets:
+                  executable_name, signature_state = target_contract[target]
                   target_root = root / source_path / "bin" / target
                   executable = target_root / executable_name
                   signed_manifest = target_root / "STANDALONE_MANIFEST.json"
@@ -69,10 +81,6 @@ jobs:
                   digest = hashlib.sha256(executable.read_bytes()).hexdigest()
                   assert digest == signed.get("executable_sha256")
 
-              release_manifest = root / "PUBLIC_RELEASE_MANIFEST.json"
-              assert release_manifest.is_file(), release_manifest
-              release = json.loads(release_manifest.read_text())
-              assert release.get("contains_private_source") is False
-              assert release.get("contains_user_data") is False
-              assert release.get("contains_credentials") is False
+              for target in set(target_contract) - supported_targets:
+                  assert not (root / source_path / "bin" / target).exists()
           PY
