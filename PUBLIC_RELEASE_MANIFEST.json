@@ -1,6 +1,6 @@
 {
   "product": "TokenChronicle Marketplace Payload",
-  "version": "0.7.2",
+  "version": "0.7.2+codex.20260828081826",
   "contains_private_source": false,
   "contains_user_data": false,
   "contains_credentials": false,
@@ -57,8 +57,18 @@
     },
     {
       "path": "plugins/tokenchronicle/.codex-plugin/plugin.json",
-      "bytes": 1405,
-      "sha256": "998accda9bd04a00444bbc992d013f4ff4d7ee8621885475643b0393a692fe4b"
+      "bytes": 1551,
+      "sha256": "f978ae958af3d922a858a35a46dda32bce2dcbabe93ef68c62537b7a0f4ffb1a"
+    },
+    {
+      "path": "plugins/tokenchronicle/assets/icon.png",
+      "bytes": 18798,
+      "sha256": "d0995d9b8710cfe71fa227d71b0d3620dfba7002bde256aedf3aef17d719d0db"
+    },
+    {
+      "path": "plugins/tokenchronicle/assets/logo.png",
+      "bytes": 874799,
+      "sha256": "695715a840a5c27b337429a01d889f84a6bca8e437bd581e70b4bbe163874bc2"
     },
     {
       "path": "plugins/tokenchronicle/bin/macos-arm64/SOURCE_COMMIT",
@@ -614,6 +624,11 @@
       "path": "plugins/tokenchronicle/docs/UPGRADE.zh-CN.md",
       "bytes": 1311,
       "sha256": "6808e2e892915c50951098b4559c15ee4ce19c4379157763bf3e24510eb13237"
+    },
+    {
+      "path": "plugins/tokenchronicle/docs/brand.md",
+      "bytes": 2173,
+      "sha256": "6e4b6e0eff409c3b7ae960a81ac33543d0a79da56ccfc35836cd86d90f787cff"
     },
     {
       "path": "plugins/tokenchronicle/docs/compatibility.md",

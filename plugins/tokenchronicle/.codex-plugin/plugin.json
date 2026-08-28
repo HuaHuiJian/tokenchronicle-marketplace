@@ -1,6 +1,6 @@
 {
   "name": "tokenchronicle",
-  "version": "0.7.2",
+  "version": "0.7.2+codex.20260828081826",
   "description": "TokenChronicle 词元日志 bilingual local-first Codex activity archive and memory continuity workflows",
   "skills": "./skills/",
   "author": {
@@ -25,7 +25,12 @@
     "privacyPolicyURL": "https://github.com/HuaHuiJian/tokenchronicle-marketplace/blob/main/PRIVACY.md",
     "termsOfServiceURL": "https://github.com/HuaHuiJian/tokenchronicle-marketplace/blob/main/TERMS.md",
     "brandColor": "#0F766E",
-    "defaultPrompt": "检查 TokenChronicle 词元日志的本地配置、隐私边界和归档状态。"
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "logoDark": "./assets/logo.png",
+    "defaultPrompt": [
+      "检查 TokenChronicle 词元日志的本地配置、隐私边界和归档状态。"
+    ]
   },
   "license": "Proprietary",
   "keywords": [
