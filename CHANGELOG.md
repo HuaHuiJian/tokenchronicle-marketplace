@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.3 - 2026-09-02
+
+- Changed the Marketplace **Try now** action into a guided, read-only-first initialization flow.
+- Added an explicit choice summary and natural-language privacy confirmation before any setup write.
+- Kept scheduling, Automation, feedback, cloud backup, and historical migration under separate consent.
+
 ## 0.7.0 - 2026-08-20
 
 - Added explicit macOS encrypted iCloud snapshot guidance and lifecycle boundaries.

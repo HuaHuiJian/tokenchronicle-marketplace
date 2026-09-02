@@ -16,6 +16,21 @@ resolve the plugin root relative to this skill and use its bundled Python packag
 `PYTHONPATH` on macOS/Linux and `py -3` plus PowerShell environment syntax on Windows. Never copy a
 Unix environment-assignment command unchanged into Windows.
 
+## Guided entry
+
+Treat the Marketplace default prompt, "initialize TokenChronicle", "set up TokenChronicle", and their
+clear Chinese equivalents as requests to start the guided initialization flow. Before explicit privacy
+acceptance, only explain the product and run read-only commands such as `guide` and `preflight`; do not
+create directories, write configuration, start an archive, enable background work, or send network
+requests.
+
+After presenting the available choices, summarize the selected Codex source, archive directory,
+language, viewer port, and whether to run the first full archive. Ask the user to confirm that summary
+in natural language. Do not require a memorized or verbatim consent sentence. The confirmation must
+unambiguously accept the current privacy notice and the listed initialization choices. Consent to setup
+or the first archive never implies consent to scheduling, Codex Automation, feedback transmission,
+cloud backup, or historical migration.
+
 ## Initialize
 
 1. Run `guide`, then explain that TokenChronicle privately preserves searchable Codex inputs, replies,

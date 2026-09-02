@@ -123,6 +123,21 @@ cloud snapshots automatically.
 
 ## First use
 
+After installing from Codex Marketplace, select **Try now** or tell Codex:
+
+> Help me initialize TokenChronicle.
+
+Codex first explains the product value and privacy boundaries and runs a read-only preflight. It then
+presents the Codex source, durable archive directory, language, viewer port, and first full archive as
+explicit choices. The user does not need to memorize a consent phrase. After Codex summarizes the
+choices, an unambiguous natural-language acceptance of the current privacy notice and that summary is
+enough to begin initialization. TokenChronicle does not create directories, write configuration, or
+start an archive before that confirmation.
+
+Initialization, the first archive, local background scheduling, Codex Automation, feedback
+transmission, cloud backup, and historical migration require separate choices. Accepting the privacy
+notice does not enable any optional feature.
+
 ```bash
 PYTHONPATH=src python3 -m tokenchronicle.cli doctor
 PYTHONPATH=src python3 -m tokenchronicle.cli archive

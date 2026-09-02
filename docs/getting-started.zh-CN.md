@@ -84,6 +84,18 @@ TokenChronicle 不会绕过决定，可以改选其他可写目录并重新预�
 
 ## 第一次使用
 
+从 Codex Marketplace 安装后，点击 **Try now**，或者直接对 Codex 说：
+
+> 帮我初始化 TokenChronicle 词元日志。
+
+Codex 会先介绍产品价值和隐私边界，并执行只读预检；然后逐项展示 Codex 数据来源、长期档案目录、
+语言、端口和首次完整归档选项。用户不需要记忆固定口令。Codex 汇总选择后，用户只需明确同意当前
+隐私条款和该项选择即可开始初始化。未经这次明确确认，TokenChronicle 不会创建目录、写入配置或
+开始归档。
+
+初始化、首次归档、本地后台调度、Codex Automation、反馈传输、云备份和历史迁移是彼此独立的
+授权。接受隐私条款不会自动启用任何可选功能。
+
 ```bash
 tokenchronicle doctor
 tokenchronicle archive

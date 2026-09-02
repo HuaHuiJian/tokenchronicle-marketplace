@@ -1,45 +1,45 @@
 {
   "product": "TokenChronicle Marketplace Payload",
-  "version": "0.7.2+codex.20260828081826",
+  "version": "0.7.3",
   "contains_private_source": false,
   "contains_user_data": false,
   "contains_credentials": false,
   "signed_targets": {
     "macos-arm64": {
       "product": "TokenChronicle",
-      "version": "0.7.2",
+      "version": "0.7.3",
       "target": "macos-arm64",
       "runtime_layout": "onedir",
       "runtime_root": "tokenchronicle",
       "executable": "tokenchronicle/tokenchronicle",
-      "executable_sha256": "8a432c6064c08e5c9cb703e9b6cb46035dc7e0b87a7e6675042c4fac218cc5f4",
+      "executable_sha256": "a5ea69384be7a553ae405a48d6ab54911760b07cd7951c91acb454efaaffcd59",
       "pyinstaller_version": "6.22.2",
       "contains_user_data": false,
       "contains_credentials": false,
       "source_distribution": false,
       "signature_state": "developer-id-notarized",
-      "embedded_signing_identity": "3ABEB3BAC51B9E3303882150EF27684EA4CD76B8",
+      "embedded_signing_identity": "Developer ID Application: Huahuijian (tianjin) Technology Co., Ltd. (H3HN33FMQ8)",
       "signing_identity": "Developer ID Application: Huahuijian (tianjin) Technology Co., Ltd. (H3HN33FMQ8)",
-      "notarization_id": "d5fc369c-c7c5-4872-b0bc-78a4a4f34ab5",
-      "source_commit": "fb1ef2e8b54ec7f8663d0340c0485da370c87766"
+      "notarization_id": "aaf13aa5-a923-41c4-94aa-5a83468e5688",
+      "source_commit": "e72f3a3b83f4c46015f8983a0138c58e1969dee8"
     },
     "macos-x86_64": {
       "product": "TokenChronicle",
-      "version": "0.7.2",
+      "version": "0.7.3",
       "target": "macos-x86_64",
       "runtime_layout": "onedir",
       "runtime_root": "tokenchronicle",
       "executable": "tokenchronicle/tokenchronicle",
-      "executable_sha256": "f376e4201c2f09bcf9687fee40b1eca15cb58e5d85401eb622404d390693f058",
+      "executable_sha256": "604fae6ee630f2d7271f50836009c0d207ad8902770798a56b4d604e806e2f83",
       "pyinstaller_version": "6.22.2",
       "contains_user_data": false,
       "contains_credentials": false,
       "source_distribution": false,
       "signature_state": "developer-id-notarized",
-      "embedded_signing_identity": "3ABEB3BAC51B9E3303882150EF27684EA4CD76B8",
+      "embedded_signing_identity": "Developer ID Application: Huahuijian (tianjin) Technology Co., Ltd. (H3HN33FMQ8)",
       "signing_identity": "Developer ID Application: Huahuijian (tianjin) Technology Co., Ltd. (H3HN33FMQ8)",
-      "notarization_id": "02366989-19d1-48c8-b994-a32bd0860db0",
-      "source_commit": "fb1ef2e8b54ec7f8663d0340c0485da370c87766"
+      "notarization_id": "3283e1e7-e1a3-4191-9e35-51614f9e01f7",
+      "source_commit": "e72f3a3b83f4c46015f8983a0138c58e1969dee8"
     }
   },
   "supported_platforms": [
@@ -57,8 +57,8 @@
     },
     {
       "path": "plugins/tokenchronicle/.codex-plugin/plugin.json",
-      "bytes": 1551,
-      "sha256": "f978ae958af3d922a858a35a46dda32bce2dcbabe93ef68c62537b7a0f4ffb1a"
+      "bytes": 1716,
+      "sha256": "a033173fae03c6ca91c84403d9f1d8c50818621224a0b9e27ef02d8a6d6d6033"
     },
     {
       "path": "plugins/tokenchronicle/assets/icon.png",
@@ -73,492 +73,532 @@
     {
       "path": "plugins/tokenchronicle/bin/macos-arm64/SOURCE_COMMIT",
       "bytes": 41,
-      "sha256": "e6ee2c62bc6524f7175f8dce3c6417e9eb3b19b744fc9086d64e1862a1563f6b"
+      "sha256": "9c85bda077a304201c0ee0b11791d767b0341ef32dc2261b5d7addf61e73abd1"
     },
     {
       "path": "plugins/tokenchronicle/bin/macos-arm64/STANDALONE_MANIFEST.json",
-      "bytes": 709,
-      "sha256": "6c49221e060043cdb38f78138577727130350838b7b591ffbe3186da2be6f89a"
+      "bytes": 749,
+      "sha256": "6f3d2e9a203c019a2f746a7ec9f0ed48b267374fb4c118c705dc614143da9c7c"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/Python3",
-      "bytes": 2915264,
-      "sha256": "211b30691af3608dfabc0a923b28863b8abd23891a934764a49a5d4d34ac8fd6"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/Python",
+      "bytes": 6741888,
+      "sha256": "4674f060f93a72ca6ac2e08f52752372dae8db90bb77665763ba84568b3f2f78"
     },
     {
       "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/base_library.zip",
-      "bytes": 848120,
-      "sha256": "a63c4e7fe2adb1e731139e048c21ebd96d8fb73547f643a739f640f7f66ea3b6"
+      "bytes": 1409329,
+      "sha256": "8761eb733cc17997986d771af57334dd9558dbcb670819a05b1e295c74f0aa36"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_bisect.cpython-39-darwin.so",
-      "bytes": 69408,
-      "sha256": "4c546045319b3a7a96693fccc0e3e2aa80ec1cee7600961970f8891882b43a89"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/libcrypto.3.dylib",
+      "bytes": 3620016,
+      "sha256": "273c9917fb5ba16ce7eed231ea85a166ef625836b66ec06b889e34495f9ea0cb"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_blake2.cpython-39-darwin.so",
-      "bytes": 103712,
-      "sha256": "bf758b4bfd0d9842c43d6740303f0ed9c73d9db7ed6e67675faabe5cc4c96e73"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/libssl.3.dylib",
+      "bytes": 650784,
+      "sha256": "082b2985007aa43f9074d069b175c22240e8e6bdacfd0324f02cbf773b77ea29"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_bz2.cpython-39-darwin.so",
-      "bytes": 71392,
-      "sha256": "4d1408699f83c1a24718ee9c67058267414d8ebc5263fa5abeb00fc64f573e97"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_bisect.cpython-313-darwin.so",
+      "bytes": 72512,
+      "sha256": "5a45c4d4a0fd4142a4ee6fd9eb563a0b6f83b0af307736096975d3c2be6728e6"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_cn.cpython-39-darwin.so",
-      "bytes": 200560,
-      "sha256": "15df2f29613ac1fbe251a36ae9beb7d97903d5d4549ef45d5b9fdca7d906c521"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_blake2.cpython-313-darwin.so",
+      "bytes": 92304,
+      "sha256": "d6ea5c85d712c06e477e05a540b20c9422f2ac2cec21b1a9281bea4d45922cc6"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_hk.cpython-39-darwin.so",
-      "bytes": 200880,
-      "sha256": "09932bfa26462f73eb8b8d905304375a95c9eb53fcc489562ed33e0815de0d01"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_bz2.cpython-313-darwin.so",
+      "bytes": 75200,
+      "sha256": "c54cad695510c47f34a2945afdf4755ec7a3a1d3b412043ad8cfacf11972e5a5"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_iso2022.cpython-39-darwin.so",
-      "bytes": 69536,
-      "sha256": "c229eab75737fdda342b46a90ecb9e8b13da5bf27083cb1395494196a4a4c12c"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_cn.cpython-313-darwin.so",
+      "bytes": 188384,
+      "sha256": "044abeb0a40eddc4a6b1ccc80b12016cfb114013b6396ff2d9024c34637268f8"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_jp.cpython-39-darwin.so",
-      "bytes": 299440,
-      "sha256": "1db6008f147ddc3c020a40bf817784fc1a8c6c8d4c9309d02b517df695a0658e"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_hk.cpython-313-darwin.so",
+      "bytes": 187952,
+      "sha256": "db78e01b053dfb1902f0f5d887c45c40010c44ef832288a4d017f9d7bb237aa1"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_kr.cpython-39-darwin.so",
-      "bytes": 167664,
-      "sha256": "360950efc853b54058d7efd33e76ef1fb1623fabffe0e8608698ad5be7865af5"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_iso2022.cpython-313-darwin.so",
+      "bytes": 76432,
+      "sha256": "60aa20896e27965655bb90642dd41abd51c44d5ff6d8eb96182fbe287b3befc0"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_tw.cpython-39-darwin.so",
-      "bytes": 167680,
-      "sha256": "8e5f7fc1f13a5d4fb9d650e919339b36b2323801a06ad839194050052542b96a"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_jp.cpython-313-darwin.so",
+      "bytes": 305072,
+      "sha256": "a4ce7c7ede7940907429fe51f68c87fa2d28b2de961cf52286d3edec58e9f639"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_contextvars.cpython-39-darwin.so",
-      "bytes": 68384,
-      "sha256": "f9dd5c699172a3a4cfb969600f3d03ced1f718df991414c31f82e1fae46310cf"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_kr.cpython-313-darwin.so",
+      "bytes": 171728,
+      "sha256": "900d559242152af5445530e35b535da01207603a3ae08fdef1fc9f739e9dfbb1"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_csv.cpython-39-darwin.so",
-      "bytes": 88512,
-      "sha256": "0a7c8ccdf50c3706413993c4064c475ddbf56147c0dd8d1c9ca99fa5aafb0e92"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_tw.cpython-313-darwin.so",
+      "bytes": 170864,
+      "sha256": "7d31768558f9a628ccf33c8b094027b59720cd244ae1b6ea0b24671c2a814571"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_datetime.cpython-39-darwin.so",
-      "bytes": 140928,
-      "sha256": "4f7c608858dc318375cc5f62b04851f7cfb36d3c332d29aae3105370cb7ff0f8"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_contextvars.cpython-313-darwin.so",
+      "bytes": 69472,
+      "sha256": "24f2c0ad83cec880b08f3f32a3062085de562a2658f574686d0ea403b2427e5a"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_decimal.cpython-39-darwin.so",
-      "bytes": 339968,
-      "sha256": "f66b550f857a5dad6d62714a2b95944ce4878229ca4d9d0b6021959855438bcc"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_csv.cpython-313-darwin.so",
+      "bytes": 94912,
+      "sha256": "a4175277a64da971a929141b6c9f5676f4e180ba98a0b27622e4fef5a55caf1a"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so",
-      "bytes": 90336,
-      "sha256": "abda354baf262864ff3c85f6b1be11b32bfb1788feee9b51f9988f9eefde91ee"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_ctypes.cpython-313-darwin.so",
+      "bytes": 200960,
+      "sha256": "60c25475fb1305fc21277f1d8cc156baea73d3917030ed14f16ec844f11ddc68"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_heapq.cpython-39-darwin.so",
-      "bytes": 85216,
-      "sha256": "00906b808481d15609dcf2718eaf86f2c78e7bce3e820c83e13af51909f2e58c"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_datetime.cpython-313-darwin.so",
+      "bytes": 166256,
+      "sha256": "6a944efca632799c193b5b29fb70f69706875f25f16ae06baaceef86878bf4c2"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_json.cpython-39-darwin.so",
-      "bytes": 89232,
-      "sha256": "221c92537e6ea75ea92feca6de224a0541edd63ba64f64ed1eb05642bf102eb7"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_decimal.cpython-313-darwin.so",
+      "bytes": 357872,
+      "sha256": "1aea02d57cf933da35e3f6e076b4e6fae46474412944aac85d46e43e1533671d"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_lzma.cpython-39-darwin.so",
-      "bytes": 89696,
-      "sha256": "38f70b873c03fc086e3c0dcd8c8d99943978181220f6f38ed4bd09b8b335041c"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_hashlib.cpython-313-darwin.so",
+      "bytes": 104864,
+      "sha256": "7ad882c8b9fe560c224e0f16c9ba8ab2f3c3155b6d60dde0f6f3895fbb726180"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_md5.cpython-39-darwin.so",
-      "bytes": 69520,
-      "sha256": "8d6ea4fbacd5bc641f6e725fa4202530ecf55a1e959bb0b6ddf4bf0dce2d9059"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_heapq.cpython-313-darwin.so",
+      "bytes": 71520,
+      "sha256": "72e6bb4ad7b3643cd6bc860e2eed080e3c4a96d9f9bc9cfc198cec066d879617"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_multibytecodec.cpython-39-darwin.so",
-      "bytes": 90832,
-      "sha256": "960c0f7a4cc6dcd3844771161ed1f8cdf47b3dcf909bf3c102fa8edf387b5d8e"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_json.cpython-313-darwin.so",
+      "bytes": 93296,
+      "sha256": "ba72821f41ee2d8e3401d0955e274ba06afb92bd0ebdb69b8d220dd9eea242c5"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_opcode.cpython-39-darwin.so",
-      "bytes": 69008,
-      "sha256": "661d70835d0d4716bdb1f6acf2f2f3d961f79efb7ffab84024e0bcaffae68127"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_lzma.cpython-313-darwin.so",
+      "bytes": 276192,
+      "sha256": "63c3da0273955a4eb5927793144d932338276205b4013321907cd61127421df1"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_pickle.cpython-39-darwin.so",
-      "bytes": 162400,
-      "sha256": "5c7de3932b089205067299c3afdaa43f6184134099b29341fdfe8c415a01d0d6"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_md5.cpython-313-darwin.so",
+      "bytes": 73776,
+      "sha256": "c4e0b6836b0d4148398b7c7a2af5addf8a143732e93793af0e2720a7d01b5f30"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_posixsubprocess.cpython-39-darwin.so",
-      "bytes": 72144,
-      "sha256": "7c38c1102f57cd3d6b962cd3c8349bcc14ee91fd1341525a6bd1e9eaf5229107"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_multibytecodec.cpython-313-darwin.so",
+      "bytes": 102320,
+      "sha256": "81972f67e7c0fc84c4838a05011c91092276ce8c32f7a337baccca3ee06deb6f"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_random.cpython-39-darwin.so",
-      "bytes": 71088,
-      "sha256": "88d1bae95a44653bae369233785d61c43d7d1430f343a641e7a86b4136bd4673"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_opcode.cpython-313-darwin.so",
+      "bytes": 75984,
+      "sha256": "0e97200d50761dd68979d19535a2f17f950cc387b6574da391dd5d28a33b3cca"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_scproxy.cpython-39-darwin.so",
-      "bytes": 70720,
-      "sha256": "fd383c7af57fd44b8439e8a438859d32bdfb8a4987e09d90501eff8f0506c614"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_pickle.cpython-313-darwin.so",
+      "bytes": 177728,
+      "sha256": "bbd99454ffe453dc1bb78792b7f89f589c9dc226fa29fe69175a763d95c64a99"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_sha1.cpython-39-darwin.so",
-      "bytes": 69520,
-      "sha256": "a29edb7956fc1e733de989226f54040853648d07bcbadf5a95148be18c1b733d"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_posixsubprocess.cpython-313-darwin.so",
+      "bytes": 73776,
+      "sha256": "78c07d9587259c5939359cc8430c8cd872d44ef82a0891b7b001bf9dca19eff4"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_sha256.cpython-39-darwin.so",
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_random.cpython-313-darwin.so",
+      "bytes": 73744,
+      "sha256": "5b60398e55125e6a0debc499110d81ba1857c72f1f6360c096d52b724b55590e"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_scproxy.cpython-313-darwin.so",
+      "bytes": 72240,
+      "sha256": "11259603326e9e1ab5c1cfe39d81834ea32a7b20dbe7d1534e3471b0c16eb610"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_sha1.cpython-313-darwin.so",
+      "bytes": 73696,
+      "sha256": "7e02611f5a991db9d09ee056fccb2cefd98f03fe3a77025066b502929740909b"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_sha2.cpython-313-darwin.so",
+      "bytes": 93152,
+      "sha256": "c284b23898cc83b90fe536a3a8e5362ed8fc143ba254e9be3c3afde153475ae5"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_sha3.cpython-313-darwin.so",
+      "bytes": 76480,
+      "sha256": "1abb19d03903e506af7ca2701259f84ebca2bfe7e0b82c4d988d35f8af129d94"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_socket.cpython-313-darwin.so",
+      "bytes": 142272,
+      "sha256": "7f33d2888cc0a94e1f288b58922058aa4a46719410dd0daaca95dd17fca0452a"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_sqlite3.cpython-313-darwin.so",
+      "bytes": 1269744,
+      "sha256": "d859224857743e323bd544957ca33e282978f9b38100cec5c801cfac9e95deb9"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_ssl.cpython-313-darwin.so",
+      "bytes": 239376,
+      "sha256": "81f219c597b879cc0028a64d6db67b3b50f09b27d7baccc624f62fc4b58ff5f1"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_statistics.cpython-313-darwin.so",
       "bytes": 69552,
-      "sha256": "32395922bba9f694715abaaca2396a98509e60b87e4d374380e5df595a28dbbc"
+      "sha256": "eed9e3766812c1636f4134fa7bbcf10281148ea04d49f346dc2408f1874d7389"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_sha3.cpython-39-darwin.so",
-      "bytes": 119968,
-      "sha256": "d0b6856ff33029f43c04d87bc7fc5b749561ba9ed67f0b8fc5584f42cdfd588e"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_struct.cpython-313-darwin.so",
+      "bytes": 102992,
+      "sha256": "83d62614430b9619c0963605ffae32217d7deae15879ed2d546329f22efcfecb"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_sha512.cpython-39-darwin.so",
-      "bytes": 85968,
-      "sha256": "3c5c53c9f4e6b7d60e5c6d347259ab2b10dbecaa4b077a63919f08c3cc219a3a"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/_uuid.cpython-313-darwin.so",
+      "bytes": 69360,
+      "sha256": "7927fc8b235602f2ebea7ad0a7fed9f0b1d16eedfc3bcbc00b22bf4da2dd1bfb"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_socket.cpython-39-darwin.so",
-      "bytes": 126352,
-      "sha256": "9e4006c3a13770e746db6e22cedfd3ebfaa378026d42d9f340e464c0a6116a77"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/array.cpython-313-darwin.so",
+      "bytes": 122256,
+      "sha256": "f7d68ffbb8d82ade2ed13f7c98fd6389d736e33d0fa79333aa10dd8666a7ed40"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_sqlite3.cpython-39-darwin.so",
-      "bytes": 114592,
-      "sha256": "9a488584ce1a5adbb351620ffa692e21c2bc3a5bab1b57427dbb1e77f242e205"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/binascii.cpython-313-darwin.so",
+      "bytes": 74704,
+      "sha256": "755231a2570a968358a4a3a04a95f5c73a401542fc373b07051a9d6d7d9f6b4e"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_ssl.cpython-39-darwin.so",
-      "bytes": 187472,
-      "sha256": "008ac3e1902651959f999c2a3daf35f8e7d198a423f96b1f106edf53f0ddd9c8"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/fcntl.cpython-313-darwin.so",
+      "bytes": 71936,
+      "sha256": "b12e387f296a8a3c05a5c67808457376d9e04fc2c599f7575b66b5e7eac7dea8"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_statistics.cpython-39-darwin.so",
-      "bytes": 68480,
-      "sha256": "7f8e32b276f37adcac4b83a0c226db52cdb54f2b8794e9b9f2df2eb449a88a4a"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/grp.cpython-313-darwin.so",
+      "bytes": 72656,
+      "sha256": "60fee20d03d09b89b505d3c93153212d45992b5c6c44c11cf4c45843fd80a345"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_struct.cpython-39-darwin.so",
-      "bytes": 90752,
-      "sha256": "7061f4469ad555786caa075fa6586047da934bc70d35bcaeb9688990e09f39b4"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/math.cpython-313-darwin.so",
+      "bytes": 118416,
+      "sha256": "5a8280a2d14d8105ca8141619d7a1b416cb2c4bb0143a3bffe56bd05e289c5bd"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/_uuid.cpython-39-darwin.so",
-      "bytes": 68384,
-      "sha256": "2ce295a0a7431307732d8f485f6b88505844ad126030aa20870259772611b04c"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/pyexpat.cpython-313-darwin.so",
+      "bytes": 254096,
+      "sha256": "b2cde4d415d49644a0ab798a79c2db2f675b63d823d92ec064d480dbd5c6e3a7"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/array.cpython-39-darwin.so",
-      "bytes": 107808,
-      "sha256": "2f293db46b104a092fe3d18426f4a804cab6c0780466fcbad671d1a84af8b0e2"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/readline.cpython-313-darwin.so",
+      "bytes": 83152,
+      "sha256": "6bccd84aaa9281bee273e6d55f0eb8282e398f7343187756ccdcc288f035b203"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/binascii.cpython-39-darwin.so",
-      "bytes": 87184,
-      "sha256": "3347164e62d08835159c32f3e17b02f4f44720dd66d0e31eb859ee0315fe97bc"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/resource.cpython-313-darwin.so",
+      "bytes": 72960,
+      "sha256": "f262891bade1f251d20b96b64f57feb470132d6336d5d0136ac67ee559033dd7"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/grp.cpython-39-darwin.so",
-      "bytes": 70512,
-      "sha256": "909ed5b63de5271a6d473643e815301507ff3d4cc41002bac0485259ba58dbfc"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/select.cpython-313-darwin.so",
+      "bytes": 96496,
+      "sha256": "e6326b88d60582f248b76d7ccd4181638104792339b0fc31d135ba58ec1c0859"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/math.cpython-39-darwin.so",
-      "bytes": 106912,
-      "sha256": "fa053611fc68feefa9459669c33679b90a89f38280bc1071456f3fbcab69c788"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/termios.cpython-313-darwin.so",
+      "bytes": 74128,
+      "sha256": "29540426583dc122651713854a32c297c43a7063d1fef79b8fc982407412e81b"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/pyexpat.cpython-39-darwin.so",
-      "bytes": 221824,
-      "sha256": "516401a2155ca547114411c0cde2595f199df8098b01d24791ab9418ea37cc16"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/unicodedata.cpython-313-darwin.so",
+      "bytes": 755936,
+      "sha256": "bba30a39706eb39226068dcef32134adea1460bbbb212c881209bd8a6b32245c"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/resource.cpython-39-darwin.so",
-      "bytes": 69760,
-      "sha256": "e4ffa31e1d115746e71c27adf73fe8743a8f72860817a0065d4a08bc3b668147"
-    },
-    {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/select.cpython-39-darwin.so",
-      "bytes": 89632,
-      "sha256": "5fe44b7a7e0f176d4fd9c07d91d644c4cab98977b61e50fcaf084ba7581fca45"
-    },
-    {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/termios.cpython-39-darwin.so",
-      "bytes": 70176,
-      "sha256": "7dece128d04af910a2d7a921fa40e0a5f19a14a860b19505d16e78097307bec7"
-    },
-    {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/unicodedata.cpython-39-darwin.so",
-      "bytes": 1170672,
-      "sha256": "42d4173f606e822db2b865c70161e7212e80bc3ad7236cd323a32d515e1aab24"
-    },
-    {
-      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.9/lib-dynload/zlib.cpython-39-darwin.so",
-      "bytes": 88544,
-      "sha256": "f1474f0f3d9175c26f239ae86889fbdb8e4586aa2946ee25ddf14c392ad678b9"
+      "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/_internal/python3.13/lib-dynload/zlib.cpython-313-darwin.so",
+      "bytes": 99408,
+      "sha256": "a9bfe4a683b137050b79077bed26c6a62c0fd2ac72639eee3549ab6ef0b279b8"
     },
     {
       "path": "plugins/tokenchronicle/bin/macos-arm64/tokenchronicle/tokenchronicle",
-      "bytes": 1310528,
-      "sha256": "8a432c6064c08e5c9cb703e9b6cb46035dc7e0b87a7e6675042c4fac218cc5f4"
+      "bytes": 2166576,
+      "sha256": "a5ea69384be7a553ae405a48d6ab54911760b07cd7951c91acb454efaaffcd59"
     },
     {
       "path": "plugins/tokenchronicle/bin/macos-x86_64/SOURCE_COMMIT",
       "bytes": 41,
-      "sha256": "e6ee2c62bc6524f7175f8dce3c6417e9eb3b19b744fc9086d64e1862a1563f6b"
+      "sha256": "9c85bda077a304201c0ee0b11791d767b0341ef32dc2261b5d7addf61e73abd1"
     },
     {
       "path": "plugins/tokenchronicle/bin/macos-x86_64/STANDALONE_MANIFEST.json",
-      "bytes": 710,
-      "sha256": "842e0a536ab23fe5be00f161136025b47be0276d5e63f1f8b22f068109e039d9"
+      "bytes": 750,
+      "sha256": "c09f4990fa3c666db4b8561dd150a52cd7427f8a56aea6489e90c94e9cb75fe0"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/Python3",
-      "bytes": 2900432,
-      "sha256": "436cb8180c11c4da055de82a0a46c59c10a67e759d6d576c29a77ad501ed0266"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/Python",
+      "bytes": 6917040,
+      "sha256": "9d782d0f000a4e534ae0ff0230e814cc7f824ee904a76172dc0c81f4ee472147"
     },
     {
       "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/base_library.zip",
-      "bytes": 848120,
-      "sha256": "a63c4e7fe2adb1e731139e048c21ebd96d8fb73547f643a739f640f7f66ea3b6"
+      "bytes": 1409168,
+      "sha256": "5e7c743905981bd52f18ae4dd9f72c4df4af61fbf08ea3afa54b5ba4f3c87ae9"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_bisect.cpython-39-darwin.so",
-      "bytes": 40800,
-      "sha256": "cbd823b3ed6dd8c0b0b56dccd7070fde249fe466e3549095fd3231fd7cd90457"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/libcrypto.3.dylib",
+      "bytes": 4161792,
+      "sha256": "2c7cf2f4c806bc3e46f36fe20bb78e2cb5e1ddbcb24eab7b9ec05846e98b31fc"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_blake2.cpython-39-darwin.so",
-      "bytes": 67072,
-      "sha256": "e298db74639ee2fec42348264cdf6e1a0cbcb07a452a0f6f7e16b3f38332eafe"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/libssl.3.dylib",
+      "bytes": 651680,
+      "sha256": "b8e0926651dead69dc524536e351de61fca772ae47026175aad5d02804c7d927"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_bz2.cpython-39-darwin.so",
-      "bytes": 46928,
-      "sha256": "c461a4294d1ad83bfb54945291366f3dece7fb2123f304b2e5da1043a12cf0de"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_bisect.cpython-313-darwin.so",
+      "bytes": 39488,
+      "sha256": "aa247213be2c6c641b10ce19a5fffb2452bd2e64d51ba88e49b8dd5b72737473"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_cn.cpython-39-darwin.so",
-      "bytes": 168592,
-      "sha256": "18d5d560fd2beb0d61eaa991928f487b019d13c43de5a9f503ea9433f0af5d14"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_blake2.cpython-313-darwin.so",
+      "bytes": 63408,
+      "sha256": "2d08766d0051bdd7ab911a7ee9b71ec35b88b6f89645e95c50bb8f033a84dbf1"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_hk.cpython-39-darwin.so",
-      "bytes": 177168,
-      "sha256": "d767baf292fff5808d1c367f2afaeb1336d271fc278b5ece3b0f7dcc07f8c35c"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_bz2.cpython-313-darwin.so",
+      "bytes": 42192,
+      "sha256": "a448f2f229d0ed2d2fb17f21a03c92a469c0ac03a72128600149d34418830d8c"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_iso2022.cpython-39-darwin.so",
-      "bytes": 45056,
-      "sha256": "7be08b10adce0e03b18a16f4a9b802f7a725b67367a12068b08d1e7e6942d646"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_cn.cpython-313-darwin.so",
+      "bytes": 163616,
+      "sha256": "dac0cdb54f6e92a8d2f2e810f8a36162a349798ceb8484fb9e36068be3380017"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_jp.cpython-39-darwin.so",
-      "bytes": 276304,
-      "sha256": "2cd88a507fd193d88509bc05abb7095b5418c3b8184c5e86ac89672964807735"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_hk.cpython-313-darwin.so",
+      "bytes": 171440,
+      "sha256": "6870bc8b34c4b56fac4866097e1810cc3fe4bd8308cb4a056aced5593d10d200"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_kr.cpython-39-darwin.so",
-      "bytes": 156144,
-      "sha256": "cc89dda22848c21d9570be069d296564e5fe8737699b0053f952a9c7c63a1e71"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_iso2022.cpython-313-darwin.so",
+      "bytes": 43440,
+      "sha256": "7b39c5a75127c4190619ba75d7278bb389221a04dccfd7d57e77cba5a31bf721"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_codecs_tw.cpython-39-darwin.so",
-      "bytes": 135520,
-      "sha256": "a427a96b7e907d98e936216f2093f7d7f044bd67c2e8a7d51aff664ef1382c1a"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_jp.cpython-313-darwin.so",
+      "bytes": 272048,
+      "sha256": "00954de284594d93d2b38aab9c7b681c266ac1ad85493d204bb50f83a7fa81c1"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_contextvars.cpython-39-darwin.so",
-      "bytes": 35648,
-      "sha256": "c55edade5482b67ac324997672efd5bd7ccaff74497799fe286cc9169abb9ccc"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_kr.cpython-313-darwin.so",
+      "bytes": 151104,
+      "sha256": "8b29b47d20d3b9d0a33ad2232496ab3126c879d786bca1e9f24702e817007d68"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_csv.cpython-39-darwin.so",
-      "bytes": 55920,
-      "sha256": "fdfb778c3d0897dae64f715ad46c2fd0e2056a5fe150554ad9201c3d3260420d"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_codecs_tw.cpython-313-darwin.so",
+      "bytes": 129600,
+      "sha256": "dccd324a0d7f0159d95b1414d5a76ceebb4c5cbcc825923e42550eb594b3c911"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_datetime.cpython-39-darwin.so",
-      "bytes": 108624,
-      "sha256": "6c77ed28a6d001ab25f9d53504db60f14920fd795d98f5f0bb201fdfd2c01b17"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_contextvars.cpython-313-darwin.so",
+      "bytes": 28192,
+      "sha256": "f39f1a2804eac3a1c4e94bbbd5ee78947914b60e2b49855017ff59bfaa51efb8"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_decimal.cpython-39-darwin.so",
-      "bytes": 308928,
-      "sha256": "f0357e3962c22ee51f1cebaff89ed8594d008fc37edbcce829100c6a17f6d573"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_csv.cpython-313-darwin.so",
+      "bytes": 53664,
+      "sha256": "2aaea9e32b87830c5e5eaddfd2f38165bad08b09186e76cb6acecf70ff529ede"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so",
-      "bytes": 57824,
-      "sha256": "046be7a7a42f06e3f5d6e8a0d5be63a413211bd5503521f1b1ebb2314ce0796c"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_ctypes.cpython-313-darwin.so",
+      "bytes": 168080,
+      "sha256": "19571ac191da0f85df0ef647cc9fdb9293e66e75afc6bf5a800ad90d15805edd"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_heapq.cpython-39-darwin.so",
-      "bytes": 44320,
-      "sha256": "72e920d38b7e05391278e92f8c37353dd084c732ab1dbd906096b978f679c5be"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_datetime.cpython-313-darwin.so",
+      "bytes": 133280,
+      "sha256": "908c734db4db0a455e6d5b12d8f789f5185893fc3d643fd1a89fb5c670929f31"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_json.cpython-39-darwin.so",
-      "bytes": 60768,
-      "sha256": "96af73f2581be471a7e77b401e3b48c6cfecd22df670c2950d3e1569d5a9cd15"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_decimal.cpython-313-darwin.so",
+      "bytes": 341216,
+      "sha256": "2b05b0775301f1919bf8cc7a7875208a8e0a88282a5b31222692d109f1e75eee"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_lzma.cpython-39-darwin.so",
-      "bytes": 57104,
-      "sha256": "b9a64758de4ccbbbb1840e0c9f8caf483ad3be4c7717cec04f41d93020298e29"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_hashlib.cpython-313-darwin.so",
+      "bytes": 80096,
+      "sha256": "bcea86380cfa7145c8483174aae6cef94ec62f091c6408bcda22e016bb6a42ed"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_md5.cpython-39-darwin.so",
-      "bytes": 40928,
-      "sha256": "fef42a4df45208002907087a157fdd27354664d540ae1674aa3e29455f88dc43"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_heapq.cpython-313-darwin.so",
+      "bytes": 38496,
+      "sha256": "34d5d1eccdd34a5760d208bc0afe76340af21056bcbd8c80570ea79dcf5c653d"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_multibytecodec.cpython-39-darwin.so",
-      "bytes": 62368,
-      "sha256": "484c2729eb42ac2d2440170c38bb31b9345c7098c3f2bf3d00bd560e8d4d22fd"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_json.cpython-313-darwin.so",
+      "bytes": 60304,
+      "sha256": "6693a64fe04e7fc609a5a0409afdd25fa2fd5c19ea7cd150b2c3391dc9283a56"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_opcode.cpython-39-darwin.so",
-      "bytes": 36272,
-      "sha256": "b39c1bba69a4829f94b0af16b4cbcb5e3810ff4d20f980622c5ef6b42eec8758"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_lzma.cpython-313-darwin.so",
+      "bytes": 226848,
+      "sha256": "1c224446fac266d53f63fc5ce826e180bb58f23848e8d64ff3e011f370125bd2"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_pickle.cpython-39-darwin.so",
-      "bytes": 134384,
-      "sha256": "8ad50e8d660816d9f894167ae7a495afcc9f2afde04a98a61b0a193cbed0d950"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_md5.cpython-313-darwin.so",
+      "bytes": 40752,
+      "sha256": "1894f035b51124bb0f64c0c8ea549b4d76555459945805dc813388492b64efe1"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_posixsubprocess.cpython-39-darwin.so",
-      "bytes": 47728,
-      "sha256": "f4c737813a3c7cbc60e12c3cc5531bedb75ba21c6cb190eaffc9b1af013e75f6"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_multibytecodec.cpython-313-darwin.so",
+      "bytes": 65200,
+      "sha256": "a8fc1dd5f498dc41e02c30f96125b1f4bb142f368ac821f509fb33ff4ae9bb64"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_random.cpython-39-darwin.so",
-      "bytes": 42480,
-      "sha256": "9ba2cd48272d5b7826382b1b047d2914d28460e90c2332107b36971e23bb0859"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_opcode.cpython-313-darwin.so",
+      "bytes": 42976,
+      "sha256": "bf0bf422d6397fd705bcd84e237d6755407c2a1c8c7fba1123f2603b2fca6541"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_scproxy.cpython-39-darwin.so",
-      "bytes": 37984,
-      "sha256": "10d21504c9dfbf14443b355d84b1e8c87c8cc5421c5ba31e83c11760dd8adef1"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_pickle.cpython-313-darwin.so",
+      "bytes": 157136,
+      "sha256": "dd8bf0131731766e23a97433d82e904ab212da3e3a88f5cd2fab2e6b64d35abd"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_sha1.cpython-39-darwin.so",
-      "bytes": 45056,
-      "sha256": "3442aec3c8257a1c7c50b9930e6ee9d240029cc518800ce415830dc10c87b19d"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_posixsubprocess.cpython-313-darwin.so",
+      "bytes": 40784,
+      "sha256": "0b754278817e04073f6d4c2a68b46aa457c0eb5d0b5350b01620126eade53e06"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_sha256.cpython-39-darwin.so",
-      "bytes": 49216,
-      "sha256": "ea9e227709ae506fe9b48b36e396fc1955251240236142825ea7e2fc361d114e"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_random.cpython-313-darwin.so",
+      "bytes": 36608,
+      "sha256": "86606b4105ae1b3e3fc9c3c33de3a9c03d2040dea8cf264ea815b4e15521976c"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_sha3.cpython-39-darwin.so",
-      "bytes": 108160,
-      "sha256": "374e33875a04ab4c09d82d40acd95c08cb90d25333f2a53dc516f021d1183421"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_scproxy.cpython-313-darwin.so",
+      "bytes": 30976,
+      "sha256": "1b943064e9ada130769141224a1e2140d76bd3756706295e31f606a6f3fc3ee4"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_sha512.cpython-39-darwin.so",
-      "bytes": 53344,
-      "sha256": "e3648516d2bda2d98347628550a82849483a741dc5ad0145be02483b72701e96"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_sha1.cpython-313-darwin.so",
+      "bytes": 36544,
+      "sha256": "48c0f44304983051ddc4054f0f6b45f96803c85911faa2dafd89fd0fc313bb0e"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_socket.cpython-39-darwin.so",
-      "bytes": 98128,
-      "sha256": "3d6eac75c7132535503b9443bf6a278a07731c062211b70d6b5ff6badb9416bc"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_sha2.cpython-313-darwin.so",
+      "bytes": 72528,
+      "sha256": "4d11cc8d4152736d21910809853438ca10b8ac8bccf15e6462058314ea6880a7"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_sqlite3.cpython-39-darwin.so",
-      "bytes": 90432,
-      "sha256": "1b269b33886c8f73b5e22142c9f44b7f9fda743af28675098ed3b1b058e9f6ea"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_sha3.cpython-313-darwin.so",
+      "bytes": 51744,
+      "sha256": "ac1e7fd6c62a05ba408606dc41adb0003a48f134af9c971e1230c9db4a19b30c"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_ssl.cpython-39-darwin.so",
-      "bytes": 163776,
-      "sha256": "92ac2023e4fe9f367130253346776f76ae591c993be7ab2c812345c8941052c4"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_socket.cpython-313-darwin.so",
+      "bytes": 105184,
+      "sha256": "28a0a82ecd4c3a2c650a3f3abcf658a9c4965abf78c0c7351449c6d3f495c1df"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_statistics.cpython-39-darwin.so",
-      "bytes": 35744,
-      "sha256": "ca11a49060201bb651a9f88b81fe306339121432a262d3bf5e5f86ace60f54dc"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_sqlite3.cpython-313-darwin.so",
+      "bytes": 1266256,
+      "sha256": "a58a4777cb538e395cc86e1e7b2ad14fcd384700284f39ad2a221ba5bbe4bb38"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_struct.cpython-39-darwin.so",
-      "bytes": 62272,
-      "sha256": "72a4bf76ee77b23dbbf07e66ca8e9317585bd83eac28bb65781cef4037edc348"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_ssl.cpython-313-darwin.so",
+      "bytes": 214704,
+      "sha256": "39e871c8ff11ecd4036d1de680b1364c6da02ba2c38baec7ec465448c806e3fd"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/_uuid.cpython-39-darwin.so",
-      "bytes": 35648,
-      "sha256": "abdc475b5ecb4e5dbf6f961eede5c75df3fdb5e98f8d0c66a978f990fb8c66c9"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_statistics.cpython-313-darwin.so",
+      "bytes": 28272,
+      "sha256": "75c0439e1e43c95afe3a53b0bce438fbc5ab3ff231a98b1a84bd957d8a99039e"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/array.cpython-39-darwin.so",
-      "bytes": 71216,
-      "sha256": "32e386dd59a8f58467abaec073006e9d9dfa87a15dee9f3be1170df702154f3b"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_struct.cpython-313-darwin.so",
+      "bytes": 74224,
+      "sha256": "e6e95ab5497fac9c453cd1553570ca6358391422c32a6cc4cbbe53ce5c85b29b"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/binascii.cpython-39-darwin.so",
-      "bytes": 54560,
-      "sha256": "2fa6a5fb539960ca070dbadf72f04631ba006febfff5f23a7a4467a2e894b5e4"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/_uuid.cpython-313-darwin.so",
+      "bytes": 28080,
+      "sha256": "d2206bc0b6c822eba3dc5f9561c05863207716da152ff8bc05875b559b4b6769"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/grp.cpython-39-darwin.so",
-      "bytes": 41904,
-      "sha256": "e2d9336d47260302fe330e7f18f026e632cf8117335c195f5d211f49b932a50e"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/array.cpython-313-darwin.so",
+      "bytes": 81392,
+      "sha256": "76900e9caed8f5cdc0bcc0166511bf363949f0af9ad66ef46449c79cb43bc546"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/math.cpython-39-darwin.so",
-      "bytes": 74416,
-      "sha256": "381bded8712c4146f897c88e0e306ddd1c66f42864664e42428a42b627002d71"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/binascii.cpython-313-darwin.so",
+      "bytes": 45840,
+      "sha256": "fcbecde798050f744c5f59db6deca49f6ce9bf2aad0763cb7893cdd4c7a22f22"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/pyexpat.cpython-39-darwin.so",
-      "bytes": 215296,
-      "sha256": "e792d45e043246cf40d82bd6ebc9c06eafbdf861aab6b26856f299ba81669a9d"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/fcntl.cpython-313-darwin.so",
+      "bytes": 38912,
+      "sha256": "466025cbc274697d12df02a7b11d4966122dca62ff46822649ecd62a3b29656d"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/resource.cpython-39-darwin.so",
-      "bytes": 41152,
-      "sha256": "b80fe96a5deacaada294f2de3f232e297ca3b206e8a9ad6d90903ef37bddc77f"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/grp.cpython-313-darwin.so",
+      "bytes": 35504,
+      "sha256": "95d6ef1b8f26c12d4ca54a5929d104de782f0df514db22332af59ae73212e7a9"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/select.cpython-39-darwin.so",
-      "bytes": 57040,
-      "sha256": "3429f4d19468ab27a23304aaf981ae83936f4298ba1a36f371ceb78d76dacd76"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/math.cpython-313-darwin.so",
+      "bytes": 89648,
+      "sha256": "62fb3301f5e8bddd36ead1f0a93fe1dee91b487f33f40850acbc850d27db0117"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/termios.cpython-39-darwin.so",
-      "bytes": 45696,
-      "sha256": "6f7e4c014b51302023ae44f72f08bfbaef4f222ef09f6468aa82e6346e5ec9bc"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/pyexpat.cpython-313-darwin.so",
+      "bytes": 254592,
+      "sha256": "bd04bb5078033a18202b7f80585d7a715f21001ef44d06a7fa05f901311b8f92"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/unicodedata.cpython-39-darwin.so",
-      "bytes": 1140256,
-      "sha256": "2693d7f921de2d4da4cc4c4bc5ccff539e7c06ba68fffcdeaddc3497acf270ae"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/readline.cpython-313-darwin.so",
+      "bytes": 54288,
+      "sha256": "b750320ee6a352bdbd30d78bf107f76b7a5df04c31ca76f79059f6e3eb8125ce"
     },
     {
-      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.9/lib-dynload/zlib.cpython-39-darwin.so",
-      "bytes": 60064,
-      "sha256": "f4ac421c26d256d222c0d884d6aec6345b6ce4b4b77f32f982524a7c4ecfb62a"
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/resource.cpython-313-darwin.so",
+      "bytes": 35824,
+      "sha256": "7b053d6da3bad350b7d42908fdb9e2378a23b9e97d9ebc88a97bf2477ed75969"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/select.cpython-313-darwin.so",
+      "bytes": 55184,
+      "sha256": "604db4b66e5e6b5d21787f74673a796a6bb7d5310fddff0a0de79b0fa6b95ec8"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/termios.cpython-313-darwin.so",
+      "bytes": 41104,
+      "sha256": "5aaaf7bdc3af5c944fbfee3bb1e295e21973990fc3384922e7205a9b7c345714"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/unicodedata.cpython-313-darwin.so",
+      "bytes": 722928,
+      "sha256": "9f82650c1bc2e537e7b71f4aed9a46751d691750636c97c0c75af2f83af9a829"
+    },
+    {
+      "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/_internal/python3.13/lib-dynload/zlib.cpython-313-darwin.so",
+      "bytes": 66384,
+      "sha256": "3b7a19b3df829a8d8775ce97720b0ce54640e11da91c6dffeca2f4a6cfb35916"
     },
     {
       "path": "plugins/tokenchronicle/bin/macos-x86_64/tokenchronicle/tokenchronicle",
-      "bytes": 1285056,
-      "sha256": "f376e4201c2f09bcf9687fee40b1eca15cb58e5d85401eb622404d390693f058"
+      "bytes": 2135376,
+      "sha256": "604fae6ee630f2d7271f50836009c0d207ad8902770798a56b4d604e806e2f83"
     },
     {
       "path": "plugins/tokenchronicle/docs/FEEDBACK_PROTOCOL.md",
@@ -642,13 +682,13 @@
     },
     {
       "path": "plugins/tokenchronicle/docs/getting-started.md",
-      "bytes": 6360,
-      "sha256": "b8b51208b455684d335fc0bdcd2577626464f4f478b9b33bb378cae9ecbf8a6c"
+      "bytes": 7261,
+      "sha256": "ab70c4f7a079ff8c20de45acdcd1cd7736ccd38192571589d627b1b2a3c2ae34"
     },
     {
       "path": "plugins/tokenchronicle/docs/getting-started.zh-CN.md",
-      "bytes": 5521,
-      "sha256": "dd468f0fec8080cb75515c0e00296be207df625a98072e483e40d6a9750f5a51"
+      "bytes": 6266,
+      "sha256": "1d74aa56af3a5a39c21d834a2c1ea3afbc37a62aa7edb5bec352405b946f6481"
     },
     {
       "path": "plugins/tokenchronicle/docs/token-usage.md",
@@ -672,8 +712,8 @@
     },
     {
       "path": "plugins/tokenchronicle/licenses/macos-arm64/PYTHON_LICENSE.txt",
-      "bytes": 13925,
-      "sha256": "599826df92bfdcd2702eac691072498bb096c55af04ee984cf90f70ed77b5a70"
+      "bytes": 13809,
+      "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb"
     },
     {
       "path": "plugins/tokenchronicle/licenses/macos-arm64/TOKENCHRONICLE_LICENSE.txt",
@@ -697,8 +737,8 @@
     },
     {
       "path": "plugins/tokenchronicle/licenses/macos-x86_64/PYTHON_LICENSE.txt",
-      "bytes": 13925,
-      "sha256": "599826df92bfdcd2702eac691072498bb096c55af04ee984cf90f70ed77b5a70"
+      "bytes": 13809,
+      "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb"
     },
     {
       "path": "plugins/tokenchronicle/licenses/macos-x86_64/TOKENCHRONICLE_LICENSE.txt",
@@ -732,8 +772,8 @@
     },
     {
       "path": "plugins/tokenchronicle/skills/tokenchronicle-setup/SKILL.md",
-      "bytes": 5026,
-      "sha256": "d02efabd60b7eae07176a924fe1ed2102fe1659aed7222219317f368118cda65"
+      "bytes": 6004,
+      "sha256": "9e24c74aa003725c191e7518dbf151c37db9e6e452fa26fd011c32cd2adc405f"
     },
     {
       "path": "plugins/tokenchronicle/skills/tokenchronicle-update/SKILL.md",

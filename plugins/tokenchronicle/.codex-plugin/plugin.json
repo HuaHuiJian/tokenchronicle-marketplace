@@ -1,6 +1,6 @@
 {
   "name": "tokenchronicle",
-  "version": "0.7.2+codex.20260828081826",
+  "version": "0.7.3",
   "description": "TokenChronicle 词元日志 bilingual local-first Codex activity archive and memory continuity workflows",
   "skills": "./skills/",
   "author": {
@@ -29,7 +29,7 @@
     "logo": "./assets/logo.png",
     "logoDark": "./assets/logo.png",
     "defaultPrompt": [
-      "检查 TokenChronicle 词元日志的本地配置、隐私边界和归档状态。"
+      "初始化 TokenChronicle 词元日志。请先介绍用途和隐私边界，执行只读环境检查，然后逐项询问数据目录、语言、端口和首次归档选择。在我明确同意前，不要写入数据、启用后台任务或发送任何网络请求。"
     ]
   },
   "license": "Proprietary",
