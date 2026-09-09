@@ -67,13 +67,15 @@ jobs:
               for target in supported_targets:
                   executable_name, signature_state = target_contract[target]
                   target_root = root / source_path / "bin" / target
-                  executable = target_root / executable_name
                   signed_manifest = target_root / "STANDALONE_MANIFEST.json"
-                  assert executable.is_file(), executable
                   assert signed_manifest.is_file(), signed_manifest
                   signed = json.loads(signed_manifest.read_text())
+                  executable_relative = signed.get("executable")
+                  assert isinstance(executable_relative, str) and executable_relative
+                  executable = target_root / executable_relative
+                  assert executable.is_file(), executable
                   assert signed.get("target") == target
-                  assert signed.get("executable") == executable_name
+                  assert executable.name == executable_name
                   assert signed.get("signature_state") == signature_state
                   assert signed.get("signing_identity")
                   if target.startswith("macos-"):
