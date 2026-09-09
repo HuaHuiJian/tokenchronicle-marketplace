@@ -1,11 +1,11 @@
 {
   "product": "TokenChronicle",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "target": "macos-x86_64",
   "runtime_layout": "onedir",
   "runtime_root": "tokenchronicle",
   "executable": "tokenchronicle/tokenchronicle",
-  "executable_sha256": "3675394cc0c45744174814d68efb31b22c407448bcc2c9a348ea93edd7c6310a",
+  "executable_sha256": "2fb7aa7189878d4337e4327149ded63630312581938583f0a8aac54fce382d74",
   "pyinstaller_version": "6.22.2",
   "contains_user_data": false,
   "contains_credentials": false,
@@ -13,5 +13,5 @@
   "signature_state": "developer-id-notarized",
   "embedded_signing_identity": "Developer ID Application: Huahuijian (tianjin) Technology Co., Ltd. (H3HN33FMQ8)",
   "signing_identity": "Developer ID Application: Huahuijian (tianjin) Technology Co., Ltd. (H3HN33FMQ8)",
-  "notarization_id": "6984f2d1-9470-45c0-a03c-179164b21c23"
+  "notarization_id": "4667f41f-b950-4e34-ae85-951deb6bac7f"
 }

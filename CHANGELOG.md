@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.8.1 - 2026-09-09
+
+- Fixed frozen Marketplace clients so macOS launchd and Windows Task Scheduler invoke the standalone executable directly.
+- Prevented pathological redaction time on large conversation data.
+- Reused complete, unchanged session exports while fully rebuilding new or updated sessions.
+- Verified a real macOS launchd run outside Codex with exit code 0 and zero model-token use.
+
 ## 0.8.0 - 2026-09-09
 
 - Added a read-only readiness state machine for every onboarding and maintenance entry point.
