@@ -18,6 +18,12 @@ Unix environment-assignment command unchanged into Windows.
 
 ## Guided entry
 
+Start every setup request by running the read-only `readiness` command. Installation alone is never
+proof that TokenChronicle is initialized or protecting activity. Continue from the returned `state`
+instead of restarting completed steps. Do not describe onboarding as complete while the state is
+`not_initialized`, `first_archive_required`, `schedule_choice_required`,
+`first_scheduled_run_pending`, `daily_protection_off`, or `attention_required`.
+
 Treat the Marketplace default prompt, "initialize TokenChronicle", "set up TokenChronicle", and their
 clear Chinese equivalents as requests to start the guided initialization flow. Before explicit privacy
 acceptance, only explain the product and run read-only commands such as `guide` and `preflight`; do not
@@ -67,13 +73,21 @@ cloud backup, or historical migration.
    OS scheduler, creating Codex Automation, or enabling feedback transmission; one consent never implies another.
 8. After the user selects paths and accepts privacy, run `setup --accept-privacy` with the selected flags.
    Do not enable optional features.
-9. Run `doctor` and `usage-notice`, report every failing check, then offer the first-use sequence:
-   `archive`, `serve`, and optionally `memory-daily`. Only after those pass, offer `run-daily`, followed
-   by an explicitly consented `schedule enable`. Keep any legacy Codex Automation active until the new
-   schedule has a verified run, then avoid running both schedulers long term.
+9. Run `doctor` and `usage-notice`, report every failing check, then run the consented first-use
+   sequence: `archive`, `serve`, and optionally `memory-daily`. After the first archive passes, do not
+   end the guided task until the user makes one explicit choice:
+   - recommended: run `run-daily`, then explicitly consent to `schedule enable`; or
+   - run `schedule manual --confirm-manual-only` after the user accepts that no automatic daily archive
+     will occur.
+   Keep any legacy Codex Automation active until the new schedule has a verified run, then avoid
+   running both schedulers long term.
    Treat an unavailable viewer port as either an already-running viewer or a conflict; check before
    recommending a different port.
-10. Explain that the Web language can be switched at any time. Translate only product UI and guidance;
+10. Finish by running `readiness`. `operational` means verified automatic daily protection.
+    `manual_only` means onboarding is complete but automatic daily protection is off. Report this
+    distinction prominently. Any other state means onboarding is incomplete and its `next_action`
+    must be handled or clearly reported as blocked.
+11. Explain that the Web language can be switched at any time. Translate only product UI and guidance;
     preserve user inputs, session titles, Codex responses, process evidence, and archived files verbatim.
 
 ## Safety boundaries

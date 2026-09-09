@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.8.0 - 2026-09-09
+
+- Added a read-only readiness state machine for every onboarding and maintenance entry point.
+- Blocked archive, viewer, memory, and daily-run operations before configuration and privacy consent.
+- Required the guided flow to finish with either verified OS scheduling or explicit manual-only mode.
+- Added cross-platform release tests and clearer bilingual activation documentation.
+
 ## 0.7.3 - 2026-09-02
 
 - Changed the Marketplace **Try now** action into a guided, read-only-first initialization flow.

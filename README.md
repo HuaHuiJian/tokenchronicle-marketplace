@@ -7,9 +7,10 @@ Technology Co., Ltd.
 
 ## Current publication state
 
-The repository marketplace now contains the TokenChronicle plugin and signed, notarized macOS
-0.7.2 clients for Apple Silicon and Intel. The branding update adds the time-ring and journal Logo
-without changing the client binaries. Windows distribution is not yet available.
+The repository marketplace contains TokenChronicle 0.8.0 with signed, notarized macOS clients for
+Apple Silicon and Intel. This release adds a verifiable activation state, blocks archive operations
+before privacy acceptance, and requires an explicit daily-schedule or manual-only choice. Windows
+distribution is not yet available.
 
 This repository contains only:
 
@@ -31,9 +32,9 @@ codex plugin add tokenchronicle@tokenchronicle
 ```
 
 This is a repository-backed marketplace release, not a claim of approval or listing in OpenAI's
-built-in catalog. Start a new Codex task after installation and ask TokenChronicle to run setup;
-it will show the Codex source, operational-state directory, and archive-library choices before
-initializing user data. 安装后新建任务运行初始化引导，确认隐私授权和归档目录后再开始使用。
+built-in catalog. After installation, select **Try now** or start a new Codex task and ask
+TokenChronicle to initialize. Installation alone does not archive data or enable daily protection.
+安装后请点击 **Try now** 完成首次启用；仅安装插件不会归档数据或启用每日保护。
 
 See [中文使用指南](plugins/tokenchronicle/docs/getting-started.zh-CN.md),
 [English guide](plugins/tokenchronicle/docs/getting-started.md), and

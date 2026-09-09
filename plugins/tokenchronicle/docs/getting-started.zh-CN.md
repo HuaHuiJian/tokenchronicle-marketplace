@@ -123,6 +123,11 @@ tokenchronicle backup create --confirm-cloud-backup
 
 > 帮我初始化 TokenChronicle 词元日志。
 
+**仅安装插件不会自动创建目录、归档会话或启用每日调度。** 这是 Codex 插件安装机制与
+TokenChronicle 隐私边界共同决定的行为。安装页面必须显示“需要完成首次启用”；用户应点击
+**Try now** 启动引导。任何 TokenChronicle 技能在执行前都会先检查 `readiness`，避免把尚未
+初始化或尚未启用每日保护的状态误报为可用。
+
 Codex 会先介绍产品价值和隐私边界，并执行只读预检；然后逐项展示 Codex 数据来源、长期档案目录、
 语言、端口和首次完整归档选项。用户不需要记忆固定口令。Codex 汇总选择后，用户只需明确同意当前
 隐私条款和该项选择即可开始初始化。未经这次明确确认，TokenChronicle 不会创建目录、写入配置或
@@ -132,6 +137,7 @@ Codex 会先介绍产品价值和隐私边界，并执行只读预检；然后�
 授权。接受隐私条款不会自动启用任何可选功能。
 
 ```bash
+tokenchronicle readiness
 tokenchronicle doctor
 tokenchronicle archive
 tokenchronicle serve
@@ -149,7 +155,18 @@ tokenchronicle memory-daily
 tokenchronicle run-daily
 tokenchronicle schedule enable --time 03:20 --confirm-background-schedule
 tokenchronicle schedule status
+tokenchronicle readiness
 ```
+
+如果用户明确不需要自动归档，必须记录为手动模式，而不能把未选择调度误认为安装完成：
+
+```bash
+tokenchronicle schedule manual --confirm-manual-only
+```
+
+`readiness.state=operational` 才表示每日自动保护已经启用且最近一次运行成功；
+`manual_only` 表示首次引导已完成，但用户必须自行运行 `tokenchronicle run-daily`，系统不会
+自动归档。其他状态都表示首次启用仍有待办事项，应按 `next_action` 继续处理。
 
 先观察至少 7 个自然日的状态和日志，再停用旧 Codex Automation。两个调度机制不应长期并行。
 

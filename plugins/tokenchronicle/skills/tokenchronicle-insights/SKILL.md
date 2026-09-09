@@ -15,6 +15,10 @@ the matching executable's `memory-daily` command. An unpacked development bundle
 may use its bundled Python package, but must select the host's Python launcher and environment syntax;
 do not use a Unix `PYTHONPATH=... python3` command unchanged on Windows.
 
+Run the read-only `readiness` command first. If TokenChronicle is not initialized or the first archive
+is incomplete, switch to guided setup instead of analyzing an empty default location. If daily
+protection is inactive, report that limitation with the analysis date.
+
 1. Read derived reports before opening detailed conversation files.
 2. Distinguish observed facts from inferred categories.
 3. For work, life, domain, preference, or memory analysis, include source date, project scope, and confidence.

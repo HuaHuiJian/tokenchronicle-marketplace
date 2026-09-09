@@ -10,6 +10,10 @@ Resolve the plugin root and use only the matching signed executable under
 installed plugin has no matching executable, report that the platform client has not been published
 and stop. Never download, replace, or trust an unverified executable.
 
+Run the read-only `readiness` command before and after the update. Preserve the exact pre-update state;
+an update must not silently mark onboarding complete, enable scheduling, or turn an operational
+installation into manual-only mode.
+
 1. Run `tokenchronicle doctor` and record the current version and application data directory.
 2. Verify the release checksum before unpacking or installing it.
 3. Replace only the program or plugin directory. Never copy the existing application data into a release bundle.

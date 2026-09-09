@@ -9,6 +9,10 @@ Resolve the plugin root and prefer its matching signed executable under
 `bin/macos-arm64/tokenchronicle/` or `bin/macos-x86_64/tokenchronicle/`. If an installed plugin has neither matching executable, report that the macOS
 client has not been published for this architecture and stop. Never download or substitute a binary.
 
+Run the read-only `readiness` command first. If TokenChronicle is not initialized, switch to guided
+setup before offering a snapshot. If daily protection is inactive, disclose that fact separately; a
+backup snapshot does not activate daily archiving.
+
 1. Run `tokenchronicle backup status` and report whether macOS `hdiutil` and iCloud Drive are available.
 2. Explain before every first snapshot:
    - iCloud synchronization is not an independent backup;

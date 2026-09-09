@@ -50,15 +50,34 @@ tokenchronicle preflight
 
 ## 目录选择
 
-安装流程会分别展示插件程序、运行状态和长期档案库。Codex 插件优先使用官方提供的
-`PLUGIN_DATA` 保存配置、锁和日志；长期档案库由用户选择。macOS 独立运行时的默认数据目录为：
+安装流程会分别展示三类位置：
+
+1. 插件或独立运行时：程序代码，只随产品升级替换。
+2. 运行状态目录：配置、锁、日志、反馈和凭证。
+3. 长期档案库：会话、过程文件、报表和记忆。
+
+macOS 默认数据目录为：
 
 ```text
 ~/Library/Application Support/TokenChronicle/
 ```
 
-用户不需要手工创建。长期档案库可以使用默认私有位置，也可以精确选择 Documents、iCloud Drive
-或其他目录：
+Windows 默认使用 `%LOCALAPPDATA%\TokenChronicle\`，Linux 默认使用
+`$XDG_DATA_HOME/tokenchronicle/` 或 `~/.local/share/tokenchronicle/`。目录按职责分开：
+
+```text
+TokenChronicle/
+├── config/config.json
+├── data/exports/
+├── data/feedback/{drafts,receipts}/
+├── state/{daily-run.json,locks/}
+├── logs/daily/
+├── backups/
+└── migration/
+```
+
+Codex 插件运行时优先使用官方提供的 `PLUGIN_DATA` 保存运行状态；独立安装使用上述操作系统目录。
+用户不需要手工创建。长期档案库可以保留在默认私有位置，也可以精确选择：
 
 ```bash
 tokenchronicle setup --accept-privacy \
@@ -68,25 +87,46 @@ tokenchronicle setup --accept-privacy \
   --port 8877
 ```
 
+选择 `Documents` 更便于人工查看、迁移和备份，但可能被 iCloud、企业同步、搜索索引或备份软件
+处理；默认应用数据目录更私密。该目录选择不会开启调度、Codex Automation、反馈或历史迁移。
+
 如果 Codex 或 macOS 要求访问所选目录，安装流程必须先展示准确路径并征得用户授权。用户拒绝后，
 TokenChronicle 不会绕过决定，可以改选其他可写目录并重新预检。
 
 ## 可选功能和成本
 
 - 手工归档不会引入模型 Token 消耗。
-- 所有调度默认关闭，产品默认后台消耗为 `0 Token/日`。
-- 首次归档成功后可以单独启用本地操作系统定时任务；该确定性任务不使用模型 Token。
+- 每日 Codex Automation 默认关闭，产品默认后台消耗为 `0 Token/日`。
 - 显式启用每日 Automation 后，建议按每次 `0.7M-2.0M total_tokens` 规划。
 - 反馈默认关闭，每次联网发送都必须单独确认。
 - 默认不复制未脱敏的原始 rollout 文件。
+- iCloud 加密快照默认关闭；手工创建不消耗模型 Token，但需要接近档案体量的临时空间和 iCloud 容量。
 
 完整估算口径见 `docs/token-usage.md`。
+
+## 可选 iCloud 加密快照
+
+实时档案始终留在本地。TokenChronicle 可以在本地生成 AES-256 加密 DMG、校验成功后再写入
+iCloud Drive。iCloud 是同步服务，不是独立备份；建议启用 Apple 高级数据保护并保留其他备份。
+
+```bash
+tokenchronicle backup status
+tokenchronicle backup create --confirm-cloud-backup
+```
+
+第二条命令会在用户自己的交互终端中两次安全询问密码。不要在 Codex 对话、命令参数、配置或脚本
+中提供密码。当前版本只支持手工快照，不会自动创建周期备份。
 
 ## 第一次使用
 
 从 Codex Marketplace 安装后，点击 **Try now**，或者直接对 Codex 说：
 
 > 帮我初始化 TokenChronicle 词元日志。
+
+**仅安装插件不会自动创建目录、归档会话或启用每日调度。** 这是 Codex 插件安装机制与
+TokenChronicle 隐私边界共同决定的行为。安装页面必须显示“需要完成首次启用”；用户应点击
+**Try now** 启动引导。任何 TokenChronicle 技能在执行前都会先检查 `readiness`，避免把尚未
+初始化或尚未启用每日保护的状态误报为可用。
 
 Codex 会先介绍产品价值和隐私边界，并执行只读预检；然后逐项展示 Codex 数据来源、长期档案目录、
 语言、端口和首次完整归档选项。用户不需要记忆固定口令。Codex 汇总选择后，用户只需明确同意当前
@@ -97,6 +137,7 @@ Codex 会先介绍产品价值和隐私边界，并执行只读预检；然后�
 授权。接受隐私条款不会自动启用任何可选功能。
 
 ```bash
+tokenchronicle readiness
 tokenchronicle doctor
 tokenchronicle archive
 tokenchronicle serve
@@ -107,5 +148,26 @@ tokenchronicle serve
 ```bash
 tokenchronicle memory-daily
 ```
+
+首次手工归档和页面验收成功后，可以再单独启用零模型 Token 的本地定时任务：
+
+```bash
+tokenchronicle run-daily
+tokenchronicle schedule enable --time 03:20 --confirm-background-schedule
+tokenchronicle schedule status
+tokenchronicle readiness
+```
+
+如果用户明确不需要自动归档，必须记录为手动模式，而不能把未选择调度误认为安装完成：
+
+```bash
+tokenchronicle schedule manual --confirm-manual-only
+```
+
+`readiness.state=operational` 才表示每日自动保护已经启用且最近一次运行成功；
+`manual_only` 表示首次引导已完成，但用户必须自行运行 `tokenchronicle run-daily`，系统不会
+自动归档。其他状态都表示首次启用仍有待办事项，应按 `next_action` 继续处理。
+
+先观察至少 7 个自然日的状态和日志，再停用旧 Codex Automation。两个调度机制不应长期并行。
 
 程序文件与用户数据彼此分离。升级只替换插件或程序代码，不覆盖归档、配置、反馈草稿和本地分析结果。

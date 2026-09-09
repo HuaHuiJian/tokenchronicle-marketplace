@@ -33,13 +33,13 @@ Not required:
 Run the read-only environment check before installation:
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli preflight
+tokenchronicle preflight
 ```
 
 Run `guide` at any time for a short value statement, requirements, choices, and first-use sequence:
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli guide
+tokenchronicle guide
 ```
 
 ## Choose where data lives
@@ -74,13 +74,13 @@ directory. A standalone install uses the operating-system application-data direc
 Use the default locations:
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli setup --accept-privacy
+tokenchronicle setup --accept-privacy
 ```
 
 Or choose a Codex source, data parent directory, and viewer port:
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli setup --accept-privacy \
+tokenchronicle setup --accept-privacy \
   --codex-home /path/to/.codex \
   --archive-dir /path/to/TokenChronicleArchive \
   --port 8877
@@ -118,14 +118,20 @@ tokenchronicle backup create --confirm-cloud-backup
 ```
 
 Run the create command in the user's own interactive terminal. The password is prompted twice and must
-never be placed in chat, command arguments, configuration, or scripts. Version 0.7.1 does not schedule
-cloud snapshots automatically.
+never be placed in chat, command arguments, configuration, or scripts. TokenChronicle does not
+schedule cloud snapshots automatically.
 
 ## First use
 
 After installing from Codex Marketplace, select **Try now** or tell Codex:
 
 > Help me initialize TokenChronicle.
+
+**Installing the plugin alone does not create directories, archive activity, or enable a daily
+schedule.** This follows both the Codex plugin installation boundary and TokenChronicle's privacy
+contract. The listing must say that guided activation is required, and the user should select
+**Try now**. Every TokenChronicle skill checks `readiness` before acting so that an uninitialized or
+non-scheduled installation cannot be mistaken for an operational one.
 
 Codex first explains the product value and privacy boundaries and runs a read-only preflight. It then
 presents the Codex source, durable archive directory, language, viewer port, and first full archive as
@@ -139,9 +145,10 @@ transmission, cloud backup, and historical migration require separate choices. A
 notice does not enable any optional feature.
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli doctor
-PYTHONPATH=src python3 -m tokenchronicle.cli archive
-PYTHONPATH=src python3 -m tokenchronicle.cli serve
+tokenchronicle readiness
+tokenchronicle doctor
+tokenchronicle archive
+tokenchronicle serve
 ```
 
 Then open `http://127.0.0.1:8777/`. The viewer remains local by default.
@@ -149,7 +156,7 @@ Then open `http://127.0.0.1:8777/`. The viewer remains local by default.
 Use `memory-daily` when local memory lifecycle reports are wanted:
 
 ```bash
-PYTHONPATH=src python3 -m tokenchronicle.cli memory-daily
+tokenchronicle memory-daily
 ```
 
 After the first manual archive and viewer acceptance pass, a user may explicitly enable the bundled
@@ -159,7 +166,20 @@ zero-model-token OS scheduler:
 tokenchronicle run-daily
 tokenchronicle schedule enable --time 03:20 --confirm-background-schedule
 tokenchronicle schedule status
+tokenchronicle readiness
 ```
+
+When a user explicitly declines automatic archiving, record that choice instead of treating an
+unanswered scheduling question as successful onboarding:
+
+```bash
+tokenchronicle schedule manual --confirm-manual-only
+```
+
+Only `readiness.state=operational` means automatic daily protection is enabled and has a recent
+successful run. `manual_only` means onboarding is complete but the user must run
+`tokenchronicle run-daily`; no automatic archive will occur. Every other state has an unfinished
+`next_action`.
 
 Observe at least seven successful daily runs before disabling a legacy Codex Automation. Do not keep
 both schedulers active long term.

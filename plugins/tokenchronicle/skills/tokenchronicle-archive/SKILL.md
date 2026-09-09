@@ -15,6 +15,12 @@ resolve the plugin root relative to this skill and use its bundled Python packag
 PowerShell environment assignment followed by `py -3 -m tokenchronicle.cli <command>`. Never assume
 the Unix command form works on Windows.
 
+Run the read-only `readiness` command before anything else. If its state is `not_initialized`, switch
+to the guided setup skill and do not archive. After a successful archive, run `readiness` again. If it
+reports `schedule_choice_required`, continue the activation flow and ask the user to choose the
+recommended zero-model-token OS schedule or explicit manual-only mode; do not imply that a manual
+archive enabled daily protection.
+
 1. Run `doctor` and stop if the Codex home is unavailable.
 2. Run `archive` and wait for its final completion line and exit code.
 3. Never add `--copy-raw`.
