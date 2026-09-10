@@ -7,10 +7,10 @@ Technology Co., Ltd.
 
 ## Current publication state
 
-The repository marketplace contains TokenChronicle 0.8.0 with signed, notarized macOS clients for
-Apple Silicon and Intel. This release adds a verifiable activation state, blocks archive operations
-before privacy acceptance, and requires an explicit daily-schedule or manual-only choice. Windows
-distribution is not yet available.
+The repository marketplace contains TokenChronicle 0.8.1 with signed, notarized macOS clients for
+Apple Silicon and Intel. This release fixes standalone daily scheduling, improves incremental archive
+performance, and preserves the verifiable activation and privacy-consent boundary introduced in
+0.8.0. Windows distribution is not yet available.
 
 This repository contains only:
 
@@ -39,6 +39,14 @@ TokenChronicle to initialize. Installation alone does not archive data or enable
 See [中文使用指南](plugins/tokenchronicle/docs/getting-started.zh-CN.md),
 [English guide](plugins/tokenchronicle/docs/getting-started.md), and
 [品牌说明 / Brand](plugins/tokenchronicle/docs/brand.md).
+
+The standalone CLI is also available from
+[GitHub Releases](https://github.com/HuaHuiJian/tokenchronicle-marketplace/releases) and the official
+TokenChronicle Homebrew tap:
+
+```sh
+brew install --cask HuaHuiJian/tokenchronicle/tokenchronicle
+```
 
 Support: `service@h2me.tech` · Privacy: `privacy@h2me.tech` · Confidential security reports:
 `security@h2me.tech`.
